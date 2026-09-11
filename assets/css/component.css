@@ -1,0 +1,71 @@
+.btn {
+  @apply inline-flex items-center justify-center gap-10 px-20 py-12 rounded-pill
+    font-heading text-18 font-normal leading-20 uppercase whitespace-nowrap
+    cursor-pointer border-0 transition-all duration-300 ease-out ;
+}
+
+.btn:disabled {
+  @apply opacity-50 cursor-not-allowed;
+}
+
+.btn-xl {
+  @apply text-20;
+}
+
+.btn-label {
+  @apply text-12;
+}
+
+.btn-sm {
+  @apply px-12 py-6 text-16;
+}
+
+.btn-md {
+  @apply text-16;
+}
+
+.btn-primary {
+  @apply bg-coral text-white hover:bg-aqua ;
+}
+
+.btn-secondary {
+  @apply bg-midnight text-aqua hover:bg-coral hover:text-white;
+}
+
+.btn-secondary-alt {
+  @apply bg-midnight text-chartreuse hover:bg-coral hover:text-white;
+}
+
+.btn-outline {
+  @apply bg-white text-coral hover:bg-midnight hover:text-white;
+}
+
+.btn-accent-aqua {
+  @apply bg-aqua text-midnight hover:bg-midnight hover:text-aqua;
+}
+
+.btn-accent-gold {
+  @apply bg-gold text-white hover:bg-midnight hover:text-gold;
+}
+
+.btn-accent-teal {
+  @apply bg-teal text-white hover:bg-midnight hover:text-teal;
+}
+
+.btn-icon {
+  @apply inline-flex items-center justify-center w-48 h-48 p-0 border-0
+    rounded-icon bg-icon-bg shadow-sm cursor-pointer hover:bg-limestone;
+}
+
+.btn-icon svg,
+.btn-icon img {
+  @apply w-20 h-20;
+}
+
+input {
+  @apply appearance-none outline-none border-0;
+}
+
+.visually-hidden {
+  @apply absolute h-0 w-0 invisible;
+}

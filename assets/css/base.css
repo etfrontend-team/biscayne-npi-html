@@ -1,0 +1,148 @@
+html {
+  @apply box-border;
+}
+
+*,
+*::before,
+*::after {
+  @apply box-border;
+}
+a,
+button,
+input,
+textarea,
+select {
+  @apply outline-0 shadow-none;
+}
+
+a:focus,
+button:focus,
+input:focus,
+textarea:focus,
+select:focus {
+  @apply outline-dotted! outline-1!;
+}
+
+
+ul {
+    @apply p-0 m-0;
+  }
+  
+  ul li {
+    @apply list-none;
+  }
+  
+  img {
+    @apply block;
+  }
+
+button {
+  @apply bg-transparent border-0 cursor-pointer;
+}
+
+body {
+  @apply m-0 font-body font-normal text-heading-5 leading-normal text-midnight bg-white antialiased;
+}
+
+a {
+  @apply no-underline text-inherit;
+}
+
+h1,
+h2,
+h3,
+.h1,
+.h2,
+.h3 {
+  @apply font-heading font-bold leading-none m-0 text-midnight;
+}
+
+h4,
+h5,
+h6,
+.h4,
+.h5,
+.h6 {
+  @apply font-heading font-normal leading-none m-0 text-midnight;
+}
+
+h1,
+.h1 {
+  @apply text-heading-1 max-1440:text-heading-2 max-1024:text-heading-3 max-768:text-heading-4;
+}
+
+h2,
+.h2 {
+  @apply text-heading-2 max-1440:text-heading-3 max-1024:text-heading-4 max-768:text-20;
+}
+
+h3,
+.h3 {
+  @apply text-heading-3 max-1440:text-heading-4 max-1024:text-heading-4 max-768:text-heading-4;
+}
+
+h4,
+.h4 {
+  @apply text-heading-4 font-body;
+}
+
+h5,
+.h5 {
+  @apply text-heading-5;
+}
+
+h6,
+.h6 {
+  @apply text-heading-6 uppercase;
+}
+
+.content p {
+  @apply text-16 font-body font-book leading-normal;
+}
+
+.content p + p {
+  @apply mt-10;
+}
+
+.title-white h1,
+.title-white h2,
+.title-white h3,
+.title-white h4,
+.title-white h5,
+.title-white h6 {
+  @apply text-white;
+}
+
+.title-midnight h1,
+.title-midnight h2,
+.title-midnight h3,
+.title-midnight h4,
+.title-midnight h5,
+.title-midnight h6 {
+  @apply text-midnight;
+}
+
+.title-limestone h1,
+.title-limestone h2,
+.title-limestone h3,
+.title-limestone h4,
+.title-limestone h5,
+.title-limestone h6 {
+  @apply text-limestone;
+}
+
+.content-white p {
+  @apply text-white;
+}
+
+.content-midnight p {
+  @apply text-midnight;
+}
+
+.container-fluid-lg {
+  @apply px-100 max-1199:px-60 max-768:px-30 1512:max-w-1700 1512:mx-auto min-[1700px]:px-0;
+}
+
+.container-fluid {
+  @apply px-40 max-1440:px-24 max-1199:px-16 1512:max-w-1700 1512:mx-auto min-[1700px]:px-0;
+}

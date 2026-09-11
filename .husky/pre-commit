@@ -1,0 +1,3 @@
+node .husky/scripts/check-headings.mjs
+bash .husky/scripts/check-assets.sh
+npx lint-staged

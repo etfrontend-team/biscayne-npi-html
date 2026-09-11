@@ -1,0 +1,63 @@
+@import "tailwindcss";
+@import "./base.css";
+@import "./component.css";
+@import "./layout.css";
+@import "./utilities.css";
+
+@theme {
+  --spacing: 1px;
+
+  --breakpoint-1920: 1921px;
+  --breakpoint-1600: 1601px;
+  --breakpoint-1512: 1513px;
+  --breakpoint-1440: 1441px;
+  --breakpoint-1366: 1367px;
+  --breakpoint-1199: 1200px;
+  --breakpoint-1024: 1025px;
+  --breakpoint-992: 993px;
+  --breakpoint-768: 769px;
+  --breakpoint-640: 641px;
+  --breakpoint-576: 577px;
+  --breakpoint-425: 426px;
+  --breakpoint-375: 376px;
+
+  --font-heading: "loos-extrawide";
+  --font-body: "turnip";
+
+  --font-weight-book: 390;
+
+  --color-white: #fdfdfd;
+  --color-midnight: #003044;
+  --color-coral: #ff715a;
+  --color-aqua: #80d6cf;
+  --color-limestone: #e7e6d4;
+  --color-limestone-light: #f6f5ec;
+  --color-gray: #c0c0c0;
+  --color-gold: #edbf53;
+  --color-teal: #5baba4;
+  --color-chartreuse: #d4d827;
+  --color-icon-bg: #f5f2ea;
+
+  --text-heading-1: 64px;
+  --text-heading-2: 48px;
+  --text-heading-3: 32px;
+  --text-heading-4: 24px;
+  --text-heading-5: 16px;
+  --text-heading-6: 12px;
+  --text-24: 24px;
+  --text-20: 20px;
+  --text-18: 18px;
+  --text-16: 16px;
+  --text-14: 14px;
+  --text-12: 12px;
+
+  --radius-pill: 20px;
+  --radius-icon: 8px;
+  --radius-10: 10px;
+  --radius-30: 30px;
+
+  --container-1000: 1000px;
+
+  --shadow-sm: 0px 1px 1.5px 0px rgba(0, 0, 0, 0.1), 0px 1px 3px 0px rgba(0, 0, 0, 0.1);
+  --shadow-default: 0px 4px 10px 0px var(--color-midnight);
+}

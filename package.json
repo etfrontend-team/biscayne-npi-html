@@ -1,0 +1,46 @@
+{
+  "name": "biscayne-npi-html",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "npx tailwindcss -i ./assets/css/app.css -o ./dist/style.css --watch",
+    "vendor": "mkdir -p dist/vendor && cp node_modules/swiper/swiper-bundle.min.js dist/vendor/ && cp node_modules/swiper/swiper-bundle.min.css dist/vendor/",
+    "lint:fix": "npx eslint . --fix && npx prettier --write .",
+    "prepare": "husky"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/etfrontend-team/biscayne-npi-html.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/etfrontend-team/biscayne-npi-html/issues"
+  },
+  "homepage": "https://github.com/etfrontend-team/biscayne-npi-html#readme",
+  "dependencies": {
+    "@tailwindcss/cli": "^4.3.3",
+    "swiper": "^14.2.0",
+    "tailwindcss": "^4.3.3"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "eslint": "^10.10.0",
+    "globals": "^17.12.0",
+    "husky": "^9.1.7",
+    "lint-staged": "^17.0.5",
+    "prettier": "^3.9.6",
+    "prettier-plugin-tailwindcss": "^0.8.1"
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx,html}": [
+      "eslint --fix"
+    ],
+    "*.{js,jsx,ts,tsx,html,css}": [
+      "prettier --write"
+    ]
+  }
+}
