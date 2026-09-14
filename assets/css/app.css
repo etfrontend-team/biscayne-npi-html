@@ -14,6 +14,7 @@
   --breakpoint-1366: 1367px;
   --breakpoint-1199: 1200px;
   --breakpoint-1024: 1025px;
+  --breakpoint-1023: 1024px;
   --breakpoint-992: 993px;
   --breakpoint-768: 769px;
   --breakpoint-640: 641px;
@@ -39,6 +40,8 @@
   --color-chartreuse: #d4d827;
   --color-icon-bg: #f5f2ea;
   --color-green: #5fbd53;
+  --color-pink: #e794b7;
+  --color-limestone-dark: #d5d3ba;
 
   --text-heading-1: 64px;
   --text-heading-2: 48px;
@@ -55,10 +58,15 @@
 
   --radius-pill: 20px;
   --radius-icon: 8px;
+  --radius-4: 4px;
   --radius-10: 10px;
   --radius-30: 30px;
 
   --container-1000: 1000px;
+
+  --rotate-16: 15.85deg;
+  --rotate-19: 18.71deg;
+  --rotate-25: 24.72deg;
 
   --shadow-sm: 0px 1px 1.5px 0px rgba(0, 0, 0, 0.1), 0px 1px 3px 0px rgba(0, 0, 0, 0.1);
   --shadow-default: 0px 4px 10px 0px var(--color-midnight);

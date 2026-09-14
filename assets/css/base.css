@@ -83,8 +83,9 @@ h3,
 
 h4,
 .h4 {
-  @apply text-heading-4 font-body;
+  @apply text-heading-4 leading-30 font-body;
 }
+
 
 h5,
 .h5 {

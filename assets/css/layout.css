@@ -546,7 +546,7 @@ a.nav-dropdown__heading h3{
 }
 
 .footer-nav__col:nth-child(2) {
-  @apply max-w-260 max-1199:max-w-200;
+  @apply max-w-260 max-1199:max-w-208;
 }
 
 .footer-nav__col--logos {
