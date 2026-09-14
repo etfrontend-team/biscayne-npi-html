@@ -20,7 +20,7 @@ while IFS= read -r file; do
   [ -z "$file" ] && continue
   [ ! -f "$file" ] && continue
 
-  if echo "$file" | grep -qiE '^assets/images?/'; then
+  if echo "$file" | grep -qiE '^assets/images?/' && ! echo "$file" | grep -qiE '\.(mp4|webm|mov|avi|mkv|flv|ogv)$'; then
     size=$(get_size "$file")
     if [ "$size" -gt "$MAX_IMAGE_BYTES" ]; then
       echo -e "\033[31mASSET\033[0m $file — $(( size / 1024 ))KB exceeds 1MB image limit"

@@ -52,6 +52,14 @@
   @apply bg-teal text-white hover:bg-midnight hover:text-teal;
 }
 
+.btn-ghost-coral {
+  @apply bg-coral/6 border-2 border-solid border-coral text-coral hover:bg-coral hover:text-white;
+}
+
+.btn-accent-green {
+  @apply bg-green text-white hover:bg-midnight hover:text-green;
+}
+
 .btn-icon {
   @apply inline-flex items-center justify-center w-48 h-48 p-0 border-0
     rounded-icon bg-icon-bg shadow-sm cursor-pointer hover:bg-limestone;

@@ -27,6 +27,7 @@
   --font-weight-book: 390;
 
   --color-white: #fdfdfd;
+  --color-black: #000000;
   --color-midnight: #003044;
   --color-coral: #ff715a;
   --color-aqua: #80d6cf;
@@ -37,6 +38,7 @@
   --color-teal: #5baba4;
   --color-chartreuse: #d4d827;
   --color-icon-bg: #f5f2ea;
+  --color-green: #5fbd53;
 
   --text-heading-1: 64px;
   --text-heading-2: 48px;

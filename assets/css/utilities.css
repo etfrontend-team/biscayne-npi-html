@@ -1,0 +1,193 @@
+/* ===== POPULAR ADVENTURES SECTION ===== */
+
+.popular-adventures-section {
+  @apply relative overflow-hidden;
+}
+
+/* .popular-adventures-section .container-fluid-lg {
+  @apply 1024:pe-0! 1024:max-w-none 1199:ps-100!;
+} */
+@media (min-width: 1024px) and (max-width: 1700px) {
+  .popular-adventures-section .container-fluid-lg {
+    @apply pe-0 max-w-none;
+  }
+}
+@media (min-width: 1199px) and (max-width: 1700px) {
+  .popular-adventures-section .container-fluid-lg {
+    @apply ps-100;
+  }
+}
+
+
+.popular-adventures-section__bg {
+  @apply absolute inset-0 w-full h-full object-cover;
+}
+
+.popular-adventures-section__overlay {
+  @apply absolute inset-0 bg-black/60;
+}
+
+.popular-adventures-section__inner {
+  @apply relative flex gap-80 items-start max-1024:flex-col max-1024:gap-40 z-5;
+}
+
+.popular-adventures-section__header {
+  @apply flex flex-col gap-32 shrink-0 max-1199:gap-24 w-400 max-768:w-full;
+}
+
+.popular-adventures-section__header .btn {
+  @apply self-start;
+}
+
+.popular-adventures-section__header .content p {
+  @apply text-24 max-768:text-16;
+}
+
+.popular-adventures-section__title-wrap {
+  @apply max-w-385;
+}
+
+.popular-adventures-section__title-wrap h2 {
+  @apply uppercase;
+}
+
+.popular-adventures-section__title-wrap {
+  @apply relative flex flex-col gap-10;
+}
+
+.popular-adventures-section__title-wrap h2 {
+  @apply max-768:text-heading-4;
+}
+
+.popular-adventures-section__deco-icon {
+  /* @apply w-45 h-auto object-contain absolute left-[78%] bottom-1/2 translate-x-[-22%] translate-y-[50%] max-1440:bottom-0 max-1440:translate-y-10 max-1440:left-[75%] max-1440:translate-x-[-25%]
+          max-1024:w-30 max-1024:left-1/2 max-1024:translate-x-1/2 max-1024:bottom-[15%]
+          max-425:left-auto max-425:right-[20%] max-425:translate-x-0; */
+  @apply w-45 h-auto object-contain absolute right-[15%] bottom-1/2 translate-y-[50%] max-1440:bottom-[25%] max-1440:translate-y-10 max-1440:right-[22%] max-1024:right-[38%] max-1024:translate-x-[62%]
+   max-1024:w-30  max-1024:bottom-[15%] max-425:left-auto max-425:right-[20%] max-425:translate-x-0 max-1440:w-26;
+}
+
+.popular-adventures-section__slider {
+  @apply relative max-576:max-w-full flex-1 flex flex-col gap-80 max-992:gap-40 min-w-0 pb-80 max-992:pb-40 w-full;
+}
+
+.popular-adventures-section__deco-icons {
+  @apply absolute -bottom-[7.5%] max-1024:-bottom-[5%] max-576:-bottom-[5%] -left-10 max-576:-left-32 flex items-end gap-6 pointer-events-none max-w-510;
+}
+
+.popular-adventures-section__deco-icons img {
+  @apply block;
+}
+.popular-adventures-section__deco-icons img:nth-child(even) {
+  @apply rotate-180;
+}
+
+/* ===== ADVENTURE CARD ===== */
+
+.adventure-card {
+  @apply relative h-600 max-768:h-540 rounded-10 overflow-hidden flex flex-col;
+}
+
+.adventure-card__bg {
+  @apply absolute inset-0 w-full h-full object-cover;
+}
+
+.adventure-card__overlay {
+  @apply absolute inset-0 rounded-10;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 33.9%, rgba(0, 0, 0, 0.7) 51.7%);
+}
+
+.adventure-card__inner {
+  @apply h-full relative flex flex-col justify-between flex-1 pt-28 pb-40 px-28 max-768:pb-32 max-768:px-24;
+}
+
+.adventure-card__top {
+  @apply flex items-start justify-between w-full;
+}
+
+.adventure-card__badge {
+  @apply min-h-32 inline-flex leading-none items-center px-12 py-6 rounded-pill font-heading text-16 font-normal uppercase text-white whitespace-nowrap;
+}
+
+.adventure-card__badge--teal {
+  @apply bg-teal;
+}
+
+.adventure-card__badge--green {
+  @apply bg-green;
+}
+
+.adventure-card__popular {
+  @apply min-h-42 inline-flex items-center px-24 py-10 rounded-full font-body leading-none font-book text-18 text-white whitespace-nowrap 
+  border border-solid border-white bg-midnight/80 max-768:hidden;
+}
+
+.adventure-card__bottom {
+  @apply flex flex-col gap-30;
+}
+
+.adventure-card__info {
+  @apply flex flex-col gap-10;
+}
+
+.adventure-card__price {
+  @apply font-heading font-bold text-heading-4 max-768:text-20 text-aqua uppercase;
+}
+
+.adventure-card__title h3 {
+  @apply text-heading-4 max-768:text-18 uppercase;
+}
+
+.adventure-card__meta {
+  @apply flex items-center gap-16 flex-wrap max-w-340;
+}
+
+.adventure-card__meta-row {
+  @apply flex flex-col gap-10;
+}
+
+.adventure-card__meta-item {
+  @apply flex items-center gap-6;
+}
+.adventure-card__meta-item span {
+  @apply font-body text-20 max-768:text-16 text-white whitespace-nowrap;
+}
+
+.adventure-card__meta-item img {
+  @apply shrink-0;
+}
+
+.adventure-card__actions {
+  @apply flex flex-col gap-14;
+}
+
+.adventure-card__actions .btn {
+  @apply w-fit;
+}
+
+/* ===== ADVENTURES SCROLLBAR ===== */
+
+.popular-adventures-scrollbar {
+  --swiper-scrollbar-bg-color: #fdfdfd;
+  --swiper-scrollbar-drag-bg-color: #80d6cf;
+  --swiper-scrollbar-border-radius: 10px;
+  @apply max-w-712 h-3 opacity-100 relative! w-full! bottom-auto! left-auto!;
+}
+
+.popular-adventures-scrollbar .swiper-scrollbar-drag {
+  @apply cursor-grab;
+}
+
+/* ===== SWIPER OVERRIDES ===== */
+
+.popular-adventures-swiper {
+  @apply overflow-visible w-full relative;
+}
+
+.popular-adventures-swiper .swiper-slide {
+  @apply w-410 max-576:w-full max-768:w-350 min-h-600 flex;
+}
+
+.popular-adventures-section__slider .swiper-scrollbar {
+  @apply left-0!
+}
