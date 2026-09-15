@@ -48,23 +48,6 @@ export function initHeaderSearch() {
   });
 }
 
-export function initHeaderNotice() {
-  const announcementBar = document.querySelector(".topbar__notice");
-
-  if (!announcementBar) return;
-
-  new Swiper(announcementBar, {
-    slidesPerView: 1,
-    loop: true,
-    speed: 600,
-    allowTouchMove: false,
-    autoplay: {
-      delay: 4000,
-      disableOnInteraction: false,
-    },
-  });
-}
-
 const DESKTOP_NAV_QUERY = "(min-width: 1200px)";
 
 export function initHeaderMegaMenu() {
@@ -236,7 +219,6 @@ export function initNavCardCaptions() {
 export function initHeader() {
   initHeaderScroll();
   initHeaderSearch();
-  initHeaderNotice();
   initHeaderMegaMenu();
   initExperiencesTabs();
   initMobileMenu();

@@ -24,7 +24,6 @@
 
     <title>Biscayne National Park Institute</title>
     <link href="../dist/style.css" rel="stylesheet" />
-    <link rel="stylesheet" href="../dist/vendor/swiper-bundle.min.css" />
     <link rel="stylesheet" href="https://use.typekit.net/kka7qnd.css">
 </head>
 <body>
@@ -836,259 +835,6 @@
             </div>
         </section>
 
-        <section class="search-bar-section bg-aqua pt-40 pb-40">
-            <form
-                class="search-bar-section__inner"
-                action="/experiences"
-                method="get"
-                role="search"
-                aria-label="Adventure search"
-            >
-                <div class="search-bar" data-dropdown-group>
-                    <div class="search-bar__field" data-dropdown>
-                        <button
-                            type="button"
-                            aria-label="Select destination"
-                            aria-haspopup="listbox"
-                            aria-expanded="false"
-                            aria-controls="search-destination-panel"
-                            class="search-bar__trigger"
-                            data-dropdown-trigger
-                        >
-                            <span class="search-bar__copy">
-                                <span class="title title-midnight search-bar__title"><h3>Destination</h3></span>
-                                <span class="search-bar__hint" data-dropdown-hint>Where would you like to go?</span>
-                            </span>
-                            <img
-                                src="/assets/icons/icon-chevron-down.svg"
-                                width="12"
-                                height="20"
-                                alt=""
-                                loading="lazy"
-                                decoding="async"
-                                class="search-bar__chevron"
-                            />
-                        </button>
-                        <input type="hidden" name="destination" data-dropdown-input />
-                        <ul
-                            id="search-destination-panel"
-                            class="search-bar__panel search-bar__panel--destination"
-                            role="listbox"
-                            aria-label="Destination"
-                            data-dropdown-panel
-                            hidden
-                        >
-                            <li class="search-bar__option" role="option" data-value="homestead">Homestead: Dante Fascell Visitor Center</li>
-                            <li class="search-bar__option" role="option" data-value="coconut-grove">Coconut Grove: Dinner Key Marina</li>
-                            <li class="search-bar__option" role="option" data-value="deering-estate">Deering Estate</li>
-                            <li class="search-bar__option" role="option" data-value="big-cypress">Big Cypress National Preserve Institute</li>
-                            <li class="search-bar__option" role="option" data-value="other-institutes">Experience Our Other Institutes</li>
-                        </ul>
-                    </div>
-
-                    <div class="search-bar__field" data-dropdown>
-                        <button
-                            type="button"
-                            aria-label="Select activity"
-                            aria-haspopup="listbox"
-                            aria-expanded="false"
-                            aria-controls="search-activity-panel"
-                            class="search-bar__trigger"
-                            data-dropdown-trigger
-                        >
-                            <span class="search-bar__copy">
-                                <span class="title title-midnight search-bar__title"><h3>Activity</h3></span>
-                                <span class="search-bar__hint" data-dropdown-hint>Where would you like to do?</span>
-                            </span>
-                            <img
-                                src="/assets/icons/icon-chevron-down.svg"
-                                width="12"
-                                height="20"
-                                alt=""
-                                loading="lazy"
-                                decoding="async"
-                                class="search-bar__chevron"
-                            />
-                        </button>
-                        <input type="hidden" name="activity" data-dropdown-input />
-                        <ul
-                            id="search-activity-panel"
-                            class="search-bar__panel search-bar__panel--activity"
-                            role="group"
-                            aria-label="Activity"
-                            data-dropdown-panel
-                            data-multi
-                            hidden
-                        >
-                            <li>
-                                <button type="button" class="search-bar__checkbox-row" role="checkbox" aria-checked="false" aria-label="Snorkeling" data-value="snorkeling" data-checkbox>
-                                    <span class="search-bar__checkbox" aria-hidden="true">
-                                        <img src="/assets/icons/icon-check.svg" width="12" height="12" alt="" loading="lazy" decoding="async" />
-                                    </span>
-                                    <span>Snorkeling</span>
-                                </button>
-                            </li>
-                            <li>
-                                <button type="button" class="search-bar__checkbox-row" role="checkbox" aria-checked="false" aria-label="Island Visit" data-value="island-visit" data-checkbox>
-                                    <span class="search-bar__checkbox" aria-hidden="true">
-                                        <img src="/assets/icons/icon-check.svg" width="12" height="12" alt="" loading="lazy" decoding="async" />
-                                    </span>
-                                    <span>Island Visit</span>
-                                </button>
-                            </li>
-                            <li>
-                                <button type="button" class="search-bar__checkbox-row" role="checkbox" aria-checked="false" aria-label="Paddling" data-value="paddling" data-checkbox>
-                                    <span class="search-bar__checkbox" aria-hidden="true">
-                                        <img src="/assets/icons/icon-check.svg" width="12" height="12" alt="" loading="lazy" decoding="async" />
-                                    </span>
-                                    <span>Paddling</span>
-                                </button>
-                            </li>
-                            <li>
-                                <button type="button" class="search-bar__checkbox-row" role="checkbox" aria-checked="false" aria-label="Stiltsville" data-value="stiltsville" data-checkbox>
-                                    <span class="search-bar__checkbox" aria-hidden="true">
-                                        <img src="/assets/icons/icon-check.svg" width="12" height="12" alt="" loading="lazy" decoding="async" />
-                                    </span>
-                                    <span>Stiltsville</span>
-                                </button>
-                            </li>
-                            <li>
-                                <button type="button" class="search-bar__checkbox-row" role="checkbox" aria-checked="false" aria-label="Boat Cruises" data-value="boat-cruises" data-checkbox>
-                                    <span class="search-bar__checkbox" aria-hidden="true">
-                                        <img src="/assets/icons/icon-check.svg" width="12" height="12" alt="" loading="lazy" decoding="async" />
-                                    </span>
-                                    <span>Boat Cruises</span>
-                                </button>
-                            </li>
-                            <li>
-                                <button type="button" class="search-bar__checkbox-row" role="checkbox" aria-checked="false" aria-label="Sailing" data-value="sailing" data-checkbox>
-                                    <span class="search-bar__checkbox" aria-hidden="true">
-                                        <img src="/assets/icons/icon-check.svg" width="12" height="12" alt="" loading="lazy" decoding="async" />
-                                    </span>
-                                    <span>Sailing</span>
-                                </button>
-                            </li>
-                            <li>
-                                <button type="button" class="search-bar__checkbox-row" role="checkbox" aria-checked="false" aria-label="Events and Workshops" data-value="events-workshops" data-checkbox>
-                                    <span class="search-bar__checkbox" aria-hidden="true">
-                                        <img src="/assets/icons/icon-check.svg" width="12" height="12" alt="" loading="lazy" decoding="async" />
-                                    </span>
-                                    <span>Events &amp; Workshops</span>
-                                </button>
-                            </li>
-                        </ul>
-                    </div>
-
-                    <div class="search-bar__field" data-dropdown>
-                        <button
-                            type="button"
-                            aria-label="Select trip length"
-                            aria-haspopup="listbox"
-                            aria-expanded="false"
-                            aria-controls="search-trip-length-panel"
-                            class="search-bar__trigger"
-                            data-dropdown-trigger
-                        >
-                            <span class="search-bar__copy">
-                                <span class="title title-midnight search-bar__title"><h3>Trip Length</h3></span>
-                                <span class="search-bar__hint" data-dropdown-hint>How long would you like to go?</span>
-                            </span>
-                            <img
-                                src="/assets/icons/icon-chevron-down.svg"
-                                width="12"
-                                height="20"
-                                alt=""
-                                loading="lazy"
-                                decoding="async"
-                                class="search-bar__chevron"
-                            />
-                        </button>
-                        <input type="hidden" name="trip_length" data-dropdown-input />
-                        <ul
-                            id="search-trip-length-panel"
-                            class="search-bar__panel search-bar__panel--trip-length"
-                            role="listbox"
-                            aria-label="Trip length"
-                            data-dropdown-panel
-                            hidden
-                        >
-                            <li class="search-bar__option" role="option" data-value="half-day">Half Day (up to 4 hrs)</li>
-                            <li class="search-bar__option" role="option" data-value="full-day">Full Day (4-8 hrs)</li>
-                            <li class="search-bar__option" role="option" data-value="multi-day">Multi-Day</li>
-                        </ul>
-                    </div>
-
-                    <div class="search-bar__field" data-dropdown>
-                        <button
-                            type="button"
-                            aria-label="Select departure month"
-                            aria-haspopup="dialog"
-                            aria-expanded="false"
-                            aria-controls="search-departure-month-panel"
-                            class="search-bar__trigger"
-                            data-dropdown-trigger
-                        >
-                            <span class="search-bar__copy">
-                                <span class="title title-midnight search-bar__title"><h3>Departure Month</h3></span>
-                                <span class="search-bar__hint" data-dropdown-hint>When are you looking to depart?</span>
-                            </span>
-                            <img
-                                src="/assets/icons/icon-chevron-down.svg"
-                                width="12"
-                                height="20"
-                                alt=""
-                                loading="lazy"
-                                decoding="async"
-                                class="search-bar__chevron"
-                            />
-                        </button>
-                        <div
-                            id="search-departure-month-panel"
-                            class="search-bar__panel search-bar__panel--departure-month"
-                            data-dropdown-panel
-                            hidden
-                        >
-                            <label for="search-departure-month-input" class="search-bar__date-row">
-                                <input
-                                    type="month"
-                                    id="search-departure-month-input"
-                                    name="departure_month"
-                                    class="search-bar__date-input"
-                                    data-date-input
-                                />
-                                <img
-                                    src="/assets/icons/icon-calendar-outline.svg"
-                                    width="20"
-                                    height="20"
-                                    alt=""
-                                    loading="lazy"
-                                    decoding="async"
-                                />
-                            </label>
-                        </div>
-                    </div>
-
-                    <button
-                        type="submit"
-                        aria-label="Search adventures"
-                        class="search-bar__submit"
-                    >
-                        <span class="search-bar__submit-label">Search</span>
-                        <span class="search-bar__submit-icon">
-                            <img
-                                src="/assets/icons/icon-search.svg"
-                                width="18"
-                                height="18"
-                                alt=""
-                                loading="lazy"
-                                decoding="async"
-                            />
-                        </span>
-                    </button>
-                </div>
-            </form>
-        </section>
-
         <section class="popular-adventures-section pt-150 pb-60 max-1199:pt-100 max-1199:pb-100">
             <img
                 src="/assets/images/popular-adventures/section-bg.webp"
@@ -1601,6 +1347,259 @@
             </div>
         </section>
 
+        <section class="search-bar-section bg-aqua pt-40 pb-40">
+            <form
+                class="search-bar-section__inner"
+                action="/experiences"
+                method="get"
+                role="search"
+                aria-label="Adventure search"
+            >
+                <div class="search-bar" data-dropdown-group>
+                    <div class="search-bar__field" data-dropdown>
+                        <button
+                            type="button"
+                            aria-label="Select destination"
+                            aria-haspopup="listbox"
+                            aria-expanded="false"
+                            aria-controls="search-destination-panel"
+                            class="search-bar__trigger"
+                            data-dropdown-trigger
+                        >
+                            <span class="search-bar__copy">
+                                <span class="title title-midnight search-bar__title"><h3>Destination</h3></span>
+                                <span class="search-bar__hint" data-dropdown-hint>Where would you like to go?</span>
+                            </span>
+                            <img
+                                src="/assets/icons/icon-chevron-down.svg"
+                                width="12"
+                                height="20"
+                                alt=""
+                                loading="lazy"
+                                decoding="async"
+                                class="search-bar__chevron"
+                            />
+                        </button>
+                        <input type="hidden" name="destination" data-dropdown-input />
+                        <ul
+                            id="search-destination-panel"
+                            class="search-bar__panel search-bar__panel--destination"
+                            role="listbox"
+                            aria-label="Destination"
+                            data-dropdown-panel
+                            hidden
+                        >
+                            <li class="search-bar__option" role="option" data-value="homestead">Homestead: Dante Fascell Visitor Center</li>
+                            <li class="search-bar__option" role="option" data-value="coconut-grove">Coconut Grove: Dinner Key Marina</li>
+                            <li class="search-bar__option" role="option" data-value="deering-estate">Deering Estate</li>
+                            <li class="search-bar__option" role="option" data-value="big-cypress">Big Cypress National Preserve Institute</li>
+                            <li class="search-bar__option" role="option" data-value="other-institutes">Experience Our Other Institutes</li>
+                        </ul>
+                    </div>
+
+                    <div class="search-bar__field" data-dropdown>
+                        <button
+                            type="button"
+                            aria-label="Select activity"
+                            aria-haspopup="listbox"
+                            aria-expanded="false"
+                            aria-controls="search-activity-panel"
+                            class="search-bar__trigger"
+                            data-dropdown-trigger
+                        >
+                            <span class="search-bar__copy">
+                                <span class="title title-midnight search-bar__title"><h3>Activity</h3></span>
+                                <span class="search-bar__hint" data-dropdown-hint>Where would you like to do?</span>
+                            </span>
+                            <img
+                                src="/assets/icons/icon-chevron-down.svg"
+                                width="12"
+                                height="20"
+                                alt=""
+                                loading="lazy"
+                                decoding="async"
+                                class="search-bar__chevron"
+                            />
+                        </button>
+                        <input type="hidden" name="activity" data-dropdown-input />
+                        <ul
+                            id="search-activity-panel"
+                            class="search-bar__panel search-bar__panel--activity"
+                            role="group"
+                            aria-label="Activity"
+                            data-dropdown-panel
+                            data-multi
+                            hidden
+                        >
+                            <li>
+                                <button type="button" class="search-bar__checkbox-row" role="checkbox" aria-checked="false" aria-label="Snorkeling" data-value="snorkeling" data-checkbox>
+                                    <span class="search-bar__checkbox" aria-hidden="true">
+                                        <img src="/assets/icons/icon-check.svg" width="12" height="12" alt="" loading="lazy" decoding="async" />
+                                    </span>
+                                    <span>Snorkeling</span>
+                                </button>
+                            </li>
+                            <li>
+                                <button type="button" class="search-bar__checkbox-row" role="checkbox" aria-checked="false" aria-label="Island Visit" data-value="island-visit" data-checkbox>
+                                    <span class="search-bar__checkbox" aria-hidden="true">
+                                        <img src="/assets/icons/icon-check.svg" width="12" height="12" alt="" loading="lazy" decoding="async" />
+                                    </span>
+                                    <span>Island Visit</span>
+                                </button>
+                            </li>
+                            <li>
+                                <button type="button" class="search-bar__checkbox-row" role="checkbox" aria-checked="false" aria-label="Paddling" data-value="paddling" data-checkbox>
+                                    <span class="search-bar__checkbox" aria-hidden="true">
+                                        <img src="/assets/icons/icon-check.svg" width="12" height="12" alt="" loading="lazy" decoding="async" />
+                                    </span>
+                                    <span>Paddling</span>
+                                </button>
+                            </li>
+                            <li>
+                                <button type="button" class="search-bar__checkbox-row" role="checkbox" aria-checked="false" aria-label="Stiltsville" data-value="stiltsville" data-checkbox>
+                                    <span class="search-bar__checkbox" aria-hidden="true">
+                                        <img src="/assets/icons/icon-check.svg" width="12" height="12" alt="" loading="lazy" decoding="async" />
+                                    </span>
+                                    <span>Stiltsville</span>
+                                </button>
+                            </li>
+                            <li>
+                                <button type="button" class="search-bar__checkbox-row" role="checkbox" aria-checked="false" aria-label="Boat Cruises" data-value="boat-cruises" data-checkbox>
+                                    <span class="search-bar__checkbox" aria-hidden="true">
+                                        <img src="/assets/icons/icon-check.svg" width="12" height="12" alt="" loading="lazy" decoding="async" />
+                                    </span>
+                                    <span>Boat Cruises</span>
+                                </button>
+                            </li>
+                            <li>
+                                <button type="button" class="search-bar__checkbox-row" role="checkbox" aria-checked="false" aria-label="Sailing" data-value="sailing" data-checkbox>
+                                    <span class="search-bar__checkbox" aria-hidden="true">
+                                        <img src="/assets/icons/icon-check.svg" width="12" height="12" alt="" loading="lazy" decoding="async" />
+                                    </span>
+                                    <span>Sailing</span>
+                                </button>
+                            </li>
+                            <li>
+                                <button type="button" class="search-bar__checkbox-row" role="checkbox" aria-checked="false" aria-label="Events and Workshops" data-value="events-workshops" data-checkbox>
+                                    <span class="search-bar__checkbox" aria-hidden="true">
+                                        <img src="/assets/icons/icon-check.svg" width="12" height="12" alt="" loading="lazy" decoding="async" />
+                                    </span>
+                                    <span>Events &amp; Workshops</span>
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="search-bar__field" data-dropdown>
+                        <button
+                            type="button"
+                            aria-label="Select trip length"
+                            aria-haspopup="listbox"
+                            aria-expanded="false"
+                            aria-controls="search-trip-length-panel"
+                            class="search-bar__trigger"
+                            data-dropdown-trigger
+                        >
+                            <span class="search-bar__copy">
+                                <span class="title title-midnight search-bar__title"><h3>Trip Length</h3></span>
+                                <span class="search-bar__hint" data-dropdown-hint>How long would you like to go?</span>
+                            </span>
+                            <img
+                                src="/assets/icons/icon-chevron-down.svg"
+                                width="12"
+                                height="20"
+                                alt=""
+                                loading="lazy"
+                                decoding="async"
+                                class="search-bar__chevron"
+                            />
+                        </button>
+                        <input type="hidden" name="trip_length" data-dropdown-input />
+                        <ul
+                            id="search-trip-length-panel"
+                            class="search-bar__panel search-bar__panel--trip-length"
+                            role="listbox"
+                            aria-label="Trip length"
+                            data-dropdown-panel
+                            hidden
+                        >
+                            <li class="search-bar__option" role="option" data-value="half-day">Half Day (up to 4 hrs)</li>
+                            <li class="search-bar__option" role="option" data-value="full-day">Full Day (4-8 hrs)</li>
+                            <li class="search-bar__option" role="option" data-value="multi-day">Multi-Day</li>
+                        </ul>
+                    </div>
+
+                    <div class="search-bar__field" data-dropdown>
+                        <button
+                            type="button"
+                            aria-label="Select departure month"
+                            aria-haspopup="dialog"
+                            aria-expanded="false"
+                            aria-controls="search-departure-month-panel"
+                            class="search-bar__trigger"
+                            data-dropdown-trigger
+                        >
+                            <span class="search-bar__copy">
+                                <span class="title title-midnight search-bar__title"><h3>Departure Month</h3></span>
+                                <span class="search-bar__hint" data-dropdown-hint>When are you looking to depart?</span>
+                            </span>
+                            <img
+                                src="/assets/icons/icon-chevron-down.svg"
+                                width="12"
+                                height="20"
+                                alt=""
+                                loading="lazy"
+                                decoding="async"
+                                class="search-bar__chevron"
+                            />
+                        </button>
+                        <div
+                            id="search-departure-month-panel"
+                            class="search-bar__panel search-bar__panel--departure-month"
+                            data-dropdown-panel
+                            hidden
+                        >
+                            <label for="search-departure-month-input" class="search-bar__date-row">
+                                <input
+                                    type="month"
+                                    id="search-departure-month-input"
+                                    name="departure_month"
+                                    class="search-bar__date-input"
+                                    data-date-input
+                                />
+                                <img
+                                    src="/assets/icons/icon-calendar-outline.svg"
+                                    width="20"
+                                    height="20"
+                                    alt=""
+                                    loading="lazy"
+                                    decoding="async"
+                                />
+                            </label>
+                        </div>
+                    </div>
+
+                    <button
+                        type="submit"
+                        aria-label="Search adventures"
+                        class="search-bar__submit"
+                    >
+                        <span class="search-bar__submit-label">Search</span>
+                        <span class="search-bar__submit-icon">
+                            <img
+                                src="/assets/icons/icon-search.svg"
+                                width="18"
+                                height="18"
+                                alt=""
+                                loading="lazy"
+                                decoding="async"
+                            />
+                        </span>
+                    </button>
+                </div>
+            </form>
+        </section>
+
         <section class="three-card-wrapper bg-limestone-light pt-50 pb-70 1199:pt-100 1199:pb-100 overflow-hidden">
             <div class="container-fluid-lg">
                 <div class="three-card-wrapper__wrap">
@@ -1972,6 +1971,12 @@
         </footer>
     </main>
 </body>
-<script defer src="../dist/vendor/swiper-bundle.min.js"></script>
+<script type="importmap">
+{
+    "imports": {
+        "swiper/bundle": "../node_modules/swiper/swiper-bundle.mjs"
+    }
+}
+</script>
 <script type="module" src="../assets/js/app.js"></script>
 </html>

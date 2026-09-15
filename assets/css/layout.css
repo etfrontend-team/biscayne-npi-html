@@ -81,7 +81,7 @@
 }
 
 .hero {
-  @apply relative flex flex-col items-center gap-50 pb-150 overflow-hidden max-768:pb-60;
+  @apply relative flex flex-col justify-center items-center gap-50 pb-150 overflow-hidden max-768:pb-60;
 }
 
 .hero__video {
