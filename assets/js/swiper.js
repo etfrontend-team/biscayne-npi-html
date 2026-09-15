@@ -92,8 +92,32 @@ export function initThreeCardWrapper() {
   });
 }
 
+export function initHeroSlider() {
+  const heroSliderEl = document.querySelector('.hero-slider');
+  if (!heroSliderEl) return;
+
+  new Swiper('.hero-slider', {
+    slidesPerView: 1,
+    loop: true,
+    speed: 800,
+    effect: "fade",
+    fadeEffect: {
+      crossFade: true,
+    },
+    // autoplay: {
+    //   delay: 4000,
+    //   disableOnInteraction: false,
+    // },
+    pagination: {
+      el: '.hero-slider .swiper-pagination',
+      clickable: true,
+    },
+  });
+}
+
 export function initSwipers() {
   initHeaderNotice();
+  initHeroSlider();
   initPopularAdventures();
   initThreeCardWrapper();
 }

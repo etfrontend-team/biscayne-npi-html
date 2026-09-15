@@ -81,11 +81,74 @@
 }
 
 .hero {
-  @apply relative flex flex-col justify-center items-center gap-50 pb-150 overflow-hidden max-768:pb-60;
+  @apply relative flex flex-col justify-center items-center gap-50 pb-150 overflow-hidden max-768:pb-60 h-951 max-1440:h-800 max-1199:h-700 max-768:h-602;
+}
+.hero::before{
+  @apply content-[''] absolute top-0 left-0 h-full w-full z-1;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.5) 7.04%, rgba(0, 0, 0, 0.5) 26.42%, rgba(0, 0, 0, 0.5) 47.65%, rgba(0, 0, 0, 0.2) 71.92%, rgba(0, 0, 0, 0.2) 100%);
+}
+.hero.hero--slider::before{
+  @apply hidden
+}
+.hero.hero--slider .swiper-slide::before{
+  @apply content-[''] absolute top-0 left-0 h-full w-full z-1;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.5) 7.04%, rgba(0, 0, 0, 0.5) 26.42%, rgba(0, 0, 0, 0.5) 47.65%, rgba(0, 0, 0, 0.2) 71.92%, rgba(0, 0, 0, 0.2) 100%);
 }
 
 .hero__video {
   @apply absolute inset-0 w-full h-full object-cover;
+}
+
+/* Hero Slider — Option 2 (autoplay banner) */
+.hero-slider {
+  @apply absolute inset-0 w-full h-full;
+}
+
+.hero-slider,
+.hero-slider .swiper-wrapper,
+.hero-slider .swiper-slide {
+  @apply w-full h-full;
+}
+
+.hero-slider__slide {
+  @apply relative flex flex-col justify-center items-center w-full h-full;
+}
+
+.hero-slider__bg {
+  @apply absolute inset-0 w-full h-full object-cover object-top;
+}
+.hero-slider .swiper-slide:nth-child(2n) .hero-slider__bg{
+  @apply object-center;
+}
+.hero-slider .swiper-slide:nth-child(2n) .title{
+  @apply max-w-828
+}
+.hero-slider .swiper-slide:last-child .hero__subtitle{
+  @apply max-w-700
+}
+
+/* Mobile: keep the lighthouse in frame (desktop crop above is untouched) */
+.hero-slider .swiper-slide:first-child .hero-slider__bg {
+  @apply max-768:object-[73%_26px];
+}
+
+.hero-slider .swiper-pagination {
+  @apply z-3 flex items-center justify-center gap-20 bottom-150 max-768:bottom-60;
+}
+.hero-slider .swiper-slide {
+  @apply max-768:pt-60
+}
+
+.hero-slider .swiper-pagination-bullet {
+  @apply w-27 h-20 m-0! rounded-none opacity-100 bg-transparent -scale-y-100 rotate-180;
+  background-image: url('/assets/icons/icon-fish-limestone.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.hero-slider .swiper-pagination-bullet-active {
+  background-image: url('/assets/icons/icon-fish.svg');
 }
 
 .site-nav {
@@ -143,7 +206,7 @@
 }
 
 .site-nav__cta {
-  @apply shrink-0 max-1440:px-16 max-1440:py-10 max-1440:text-14 max-1199:px-14 max-1199:py-8 max-1199:text-12;
+  @apply shrink-0 h-44 max-1440:px-16 max-1440:py-10 max-1440:text-14 max-1199:px-14 max-1199:py-8 max-1199:text-12;
 }
 
 .topbar__shop {
@@ -259,7 +322,10 @@
 }
 
 .hero__content {
-  @apply relative flex flex-col items-start gap-30 w-full;
+  @apply relative flex flex-col items-start gap-10 w-full z-2;
+}
+.hero__content .btn{
+  @apply 768:mt-20
 }
 
 .hero__icons {
@@ -267,12 +333,15 @@
 }
 
 .hero__icons img {
-  @apply block -scale-y-100 rotate-180;
+  @apply block -scale-y-100 rotate-180 max-768:max-w-25;
 }
 
 .hero__title,
 .hero__subtitle {
   @apply max-w-1000;
+}
+.hero__subtitle h2{
+  @apply font-normal 
 }
 
 .mobile-header {

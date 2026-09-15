@@ -54,7 +54,7 @@ h3,
 .h1,
 .h2,
 .h3 {
-  @apply font-heading font-bold leading-none m-0 text-midnight;
+  @apply font-heading font-bold  uppercase  leading-none m-0 text-midnight;
 }
 
 h4,
@@ -68,17 +68,17 @@ h6,
 
 h1,
 .h1 {
-  @apply text-heading-1 max-1440:text-heading-2 max-1024:text-heading-3 max-768:text-heading-4;
+  @apply text-heading-1 leading-81 max-1440:text-heading-2 max-1440:leading-60 max-1024:text-heading-3 max-1024:leading-40 max-768:text-heading-4 max-768:leading-30;
 }
 
 h2,
 .h2 {
-  @apply text-heading-2 max-1440:text-heading-3 max-1024:text-heading-4 max-768:text-20;
+  @apply text-heading-2 leading-60 max-1440:text-heading-3 max-1440:leading-40 max-1024:text-heading-4 max-1024:leading-30 max-768:text-20 max-768:leading-25;
 }
 
 h3,
 .h3 {
-  @apply text-heading-3 max-1440:text-heading-4 max-1024:text-heading-4 max-768:text-heading-4;
+  @apply text-heading-3 leading-40 max-1440:text-heading-4 max-1440:leading-30 max-1024:text-heading-4 max-768:text-20 max-768:leading-25;
 }
 
 h4,
@@ -89,7 +89,7 @@ h4,
 
 h5,
 .h5 {
-  @apply text-heading-5;
+  @apply text-heading-5 leading-25;
 }
 
 h6,

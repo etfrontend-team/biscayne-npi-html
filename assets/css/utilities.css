@@ -334,12 +334,12 @@
 }
 
 .popular-adventures-section__title-wrap h2 {
-  @apply max-768:text-heading-4;
+  @apply max-768:text-heading-4 max-768:leading-30;
 }
 
 .popular-adventures-section__deco-icon {
-  @apply w-45 h-auto object-contain absolute right-[15%] bottom-1/2 translate-y-[50%] max-1440:bottom-[25%] max-1440:translate-y-10 max-1440:right-[22%] max-1024:right-[43%] max-1024:translate-x-[62%]
-   max-1024:w-30  max-1024:bottom-[15%] max-425:left-auto max-425:right-[20%] max-425:translate-x-0 max-1440:w-26;
+  @apply w-45 h-auto object-contain absolute right-[11%] bottom-[48%] translate-y-[50%] max-1440:bottom-[25%] max-1440:translate-y-13 max-1440:right-[22%] max-1024:right-[43%] max-1024:translate-x-[62%]
+   max-1024:w-25  max-1024:bottom-[29%] max-425:right-[40%] max-1440:w-30;
 }
 
 .popular-adventures-section__slider {

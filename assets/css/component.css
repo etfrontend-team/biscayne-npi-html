@@ -1,8 +1,9 @@
 .btn {
   @apply inline-flex items-center justify-center gap-10 px-20 py-12 rounded-pill
-    font-heading text-18 font-normal leading-20 uppercase whitespace-nowrap
+    font-heading text-18 font-normal leading-23 max-576:text-12 max-576:leading-15 uppercase whitespace-nowrap
     cursor-pointer border-0 transition-all duration-300 ease-out ;
 }
+
 
 .btn:disabled {
   @apply opacity-50 cursor-not-allowed;
