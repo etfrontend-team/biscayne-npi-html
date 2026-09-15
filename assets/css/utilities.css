@@ -339,11 +339,11 @@
 
 .popular-adventures-section__deco-icon {
   @apply w-45 h-auto object-contain absolute right-[11%] bottom-[48%] translate-y-[50%] max-1440:bottom-[25%] max-1440:translate-y-13 max-1440:right-[22%] max-1024:right-[43%] max-1024:translate-x-[62%]
-   max-1024:w-25  max-1024:bottom-[29%] max-425:right-[40%] max-1440:w-30;
+   max-1024:w-25  max-1024:bottom-[29%] max-425:right-[32%] max-1440:w-30;
 }
 
 .popular-adventures-section__slider {
-  @apply relative max-576:max-w-full flex-1 flex flex-col gap-80 max-992:gap-40 min-w-0  w-full;
+  @apply relative max-576:max-w-full flex-1 flex flex-col gap-80 max-992:gap-40 min-w-0 overflow-hidden w-full;
 }
 
 .popular-adventures-section__deco-icons {

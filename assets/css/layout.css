@@ -139,6 +139,7 @@
   @apply max-768:pt-60
 }
 
+
 .hero-slider .swiper-pagination-bullet {
   @apply w-27 h-20 m-0! rounded-none opacity-100 bg-transparent -scale-y-100 rotate-180;
   background-image: url('/assets/icons/icon-fish-limestone.svg');
@@ -420,6 +421,9 @@
 
 .mobile-nav__chevron {
   @apply rotate-90 transition-transform duration-300;
+}
+footer .mobile-nav__chevron{
+  @apply rotate-270
 }
 
 .mobile-nav__row[aria-expanded="true"] .mobile-nav__chevron {
@@ -723,15 +727,18 @@ a.nav-dropdown__heading h3{
 }
 
 .footer-nav__acc-row .mobile-nav__chevron {
-  @apply invert-100 mt-5 ;
+  @apply invert-100 mt-3 ;
 }
 
 .footer-nav__acc-panel {
-  @apply flex flex-col gap-16 px-20 pb-20 font-body font-book text-18 text-white;
+  @apply flex flex-col gap-16 max-768:gap-10 max-768:pl-40 max-768:mt-10 px-20  font-body font-book text-18 text-white;
 }
 
 .footer-nav__acc-panel[hidden] {
   @apply hidden;
+}
+.footer-nav__acc-row[aria-expanded="false"]  .mobile-nav__chevron{
+@apply rotate-90
 }
 
 .footer-nav__policy {
@@ -743,7 +750,7 @@ a.nav-dropdown__heading h3{
 }
 
 .footer-nav__policy-links {
-  @apply flex items-center justify-between gap-16 w-full font-body font-book text-18 leading-21 py-9 max-1199:text-16 max-768:text-18 text-white max-768:flex-col max-768:items-start max-768:gap-20 max-768:py-0 max-768:px-20;
+  @apply flex items-center justify-between gap-16 w-full font-body font-book text-18 leading-22 py-9 max-1199:text-16 max-768:text-18 text-white max-768:flex-col max-768:items-start max-768:gap-20 max-768:py-0 max-768:px-20;
 }
 .footer-nav__policy-links a:hover{
   @apply text-aqua
