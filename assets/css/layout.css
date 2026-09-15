@@ -235,11 +235,15 @@
 }
 
 .nav-dropdown__card {
-  @apply flex-1 min-w-0 flex flex-col gap-10 cursor-pointer;
+  @apply h-311 flex-1 min-w-0 flex flex-col gap-20 cursor-pointer;
+}
+
+[data-nav-dropdown="experiences"] .nav-dropdown__card {
+  @apply h-355;
 }
 
 .nav-dropdown__card img {
-  @apply block w-full h-auto rounded-10 shadow-md;
+  @apply block w-full flex-1 min-h-0 object-cover rounded-10 shadow-md;
 }
 
 .nav-dropdown__card-caption {
@@ -281,12 +285,15 @@
 }
 
 .mobile-header__logo.logo-dark,
+.mobile-header__menu-icon.logo-dark,
 .mobile-header__phone-icon.logo-dark {
   @apply hidden;
 }
 
 .header--scrolled .mobile-header__logo.logo-light,
 .header--menu-open .mobile-header__logo.logo-light,
+.header--scrolled .mobile-header__menu-icon.logo-light,
+.header--menu-open .mobile-header__menu-icon.logo-light,
 .header--scrolled .mobile-header__phone-icon.logo-light,
 .header--menu-open .mobile-header__phone-icon.logo-light {
   @apply hidden;
@@ -294,6 +301,8 @@
 
 .header--scrolled .mobile-header__logo.logo-dark,
 .header--menu-open .mobile-header__logo.logo-dark,
+.header--scrolled .mobile-header__menu-icon.logo-dark,
+.header--menu-open .mobile-header__menu-icon.logo-dark,
 .header--scrolled .mobile-header__phone-icon.logo-dark,
 .header--menu-open .mobile-header__phone-icon.logo-dark {
   @apply block;

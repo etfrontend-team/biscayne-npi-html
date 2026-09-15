@@ -218,6 +218,21 @@ export function initMobileAccordion() {
   });
 }
 
+export function initNavCardCaptions() {
+  const equalize = () => {
+    document.querySelectorAll(".nav-dropdown__cards").forEach((cards) => {
+      const captions = cards.querySelectorAll(".nav-dropdown__card-caption");
+      captions.forEach((c) => (c.style.height = ""));
+      let max = 0;
+      captions.forEach((c) => (max = Math.max(max, c.offsetHeight)));
+      if (max > 0) captions.forEach((c) => (c.style.height = max + "px"));
+    });
+  };
+
+  equalize();
+  window.addEventListener("resize", equalize, { passive: true });
+}
+
 export function initHeader() {
   initHeaderScroll();
   initHeaderSearch();
@@ -226,4 +241,5 @@ export function initHeader() {
   initExperiencesTabs();
   initMobileMenu();
   initMobileAccordion();
+  initNavCardCaptions();
 }

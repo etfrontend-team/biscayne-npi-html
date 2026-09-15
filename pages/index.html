@@ -235,7 +235,7 @@
             </div>
 
             <div
-                class="nav-dropdown"
+                class="nav-dropdown is-open"
                 data-nav-dropdown="locations"
             >
                 <div class="nav-dropdown__panel">
@@ -291,7 +291,7 @@
                             <div class="nav-dropdown__tabs">
                                 <button type="button" class="nav-dropdown__tab is-active" data-exp-tab="activity">By Activity</button>
                                 <button type="button" class="nav-dropdown__tab" data-exp-tab="traveler">By Traveler</button>
-                                <a href="#" type="button" class="nav-dropdown__tab" disabled aria-disabled="true">Specialty Trips</a>
+                                <button type="button" class="nav-dropdown__tab" data-exp-tab="specialty">Specialty Trips</button>
                                 <a href="#" type="button" class="nav-dropdown__tab" disabled aria-disabled="true">All</a>
                             </div>
                             <div class="nav-dropdown__tab-panel" data-exp-panel="activity">
@@ -313,6 +313,12 @@
                                     <li><a href="/experiences/group-trips" role="link" target="_self" aria-label="Group Trips">Group Trips</a></li>
                                     <li><a href="/experiences/team-building" role="link" target="_self" aria-label="Team Building">Team Building</a></li>
                                     <li><a href="/experiences/education" role="link" target="_self" aria-label="Education">Education</a></li>
+                                </ul>
+                            </div>
+                            <div class="nav-dropdown__tab-panel" data-exp-panel="specialty" hidden>
+                                <a href="#" class="title title-midnight nav-dropdown__heading"><h3>Top Activities</h3></a>
+                                <ul class="nav-dropdown__list">
+                                    <li><a href="/experiences/veteran-fishing-workshop" role="link" target="_self" aria-label="Veteran Fishing Workshop">Veteran Fishing Workshop</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -338,6 +344,16 @@
                             <a href="/experiences/paddling" role="link" target="_self" aria-label="Paddling" class="nav-dropdown__card">
                                 <img src="/assets/images/nav-dropdown/exp_activity_3.webp" width="220" height="313" alt="Paddling" loading="lazy" decoding="async" />
                                 <span class="nav-dropdown__card-caption">Paddling
+                                    <svg width="9" height="15" viewBox="0 0 9 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M8.24292 6.75728L1.79316 0.307707C1.38287 -0.102775 0.717671 -0.102775 0.307588 0.307707C-0.102529 0.717825 -0.102529 1.383 0.307588 1.79308L6.01463 7.49997L0.307755 13.2067C-0.102362 13.6169 -0.102362 14.282 0.307755 14.6922C0.717871 15.1025 1.38304 15.1025 1.79332 14.6922L8.24308 8.24249C8.44814 8.03733 8.55056 7.76873 8.55056 7.5C8.55056 7.23114 8.44794 6.96234 8.24292 6.75728Z" fill="#003044"/>
+</svg>
+                                </span>
+                            </a>
+                        </div>
+                        <div class="nav-dropdown__cards" data-exp-cards="specialty" hidden>
+                            <a href="/experiences/veteran-fishing-workshop" role="link" target="_self" aria-label="Veteran Fishing Workshop" class="nav-dropdown__card">
+                                <img src="/assets/images/nav-dropdown/exp_specialty_1.webp" width="1200" height="801" alt="Veteran Fishing Workshop" loading="lazy" decoding="async" />
+                                <span class="nav-dropdown__card-caption">Veteran Fishing Workshop
                                     <svg width="9" height="15" viewBox="0 0 9 15" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M8.24292 6.75728L1.79316 0.307707C1.38287 -0.102775 0.717671 -0.102775 0.307588 0.307707C-0.102529 0.717825 -0.102529 1.383 0.307588 1.79308L6.01463 7.49997L0.307755 13.2067C-0.102362 13.6169 -0.102362 14.282 0.307755 14.6922C0.717871 15.1025 1.38304 15.1025 1.79332 14.6922L8.24308 8.24249C8.44814 8.03733 8.55056 7.76873 8.55056 7.5C8.55056 7.23114 8.44794 6.96234 8.24292 6.75728Z" fill="#003044"/>
 </svg>
@@ -522,12 +538,22 @@
                     data-mobile-menu-toggle
                 >
                     <img
+                        src="/assets/icons/icon-menu-white.svg"
+                        width="18"
+                        height="19"
+                        alt="Menu icon"
+                        loading="lazy"
+                        decoding="async"
+                        class="mobile-header__menu-icon logo-light"
+                    />
+                    <img
                         src="/assets/icons/icon-menu.svg"
                         width="18"
                         height="19"
                         alt="Menu icon"
                         loading="lazy"
                         decoding="async"
+                        class="mobile-header__menu-icon logo-dark"
                     />
                 </button>
                 <a
@@ -557,10 +583,10 @@
                     />
                 </a>
                 <a
-                    href="tel:+10000000000"
+                    href="tel:+17864654058"
                     role="link"
                     target="_self"
-                    aria-label="Call us"
+                    aria-label="Call (786) 465-4058"
                     class="mobile-header__phone-btn"
                 >
                     <img
@@ -573,7 +599,7 @@
                         class="mobile-header__phone-icon logo-light"
                     />
                     <img
-                        src="/assets/icons/icon-phone.svg"
+                        src="/assets/icons/icon-phone-aqua.svg"
                         width="20"
                         height="20"
                         alt="Phone icon"
@@ -632,7 +658,15 @@
                                 <a href="/experiences/education" role="link" target="_self" aria-label="Education">Education</a>
                             </div>
                         </div>
-                        <a class="mobile-nav__subrow mobile-nav__subrow--flat" aria-disabled="true">Specialty Trips</a>
+                        <div class="mobile-nav__acc mobile-nav__acc--sub" data-acc>
+                            <button type="button" class="mobile-nav__subrow" data-acc-trigger aria-expanded="false">
+                                Specialty Trips
+                                <img src="/assets/icons/icon-chevron-down.svg" width="12" height="20" alt="" class="mobile-nav__chevron" loading="lazy" decoding="async" />
+                            </button>
+                            <div class="mobile-nav__subpanel" data-acc-panel hidden>
+                                <a href="/experiences/veteran-fishing-workshop" role="link" target="_self" aria-label="Veteran Fishing Workshop">Veteran Fishing Workshop</a>
+                            </div>
+                        </div>
                         <a class="mobile-nav__subrow mobile-nav__subrow--flat" aria-disabled="true">All</a>
                     </div>
                 </div>
