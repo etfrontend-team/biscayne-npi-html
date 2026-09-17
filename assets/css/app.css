@@ -1,9 +1,10 @@
-@import "tailwindcss";
-@import "swiper/css/bundle";
-@import "./base.css";
-@import "./component.css";
-@import "./layout.css";
-@import "./utilities.css";
+@import 'tailwindcss';
+@import 'swiper/css/bundle';
+@import './base.css';
+@import './component.css';
+@import './layout.css';
+@import './utilities.css';
+@import './custom.css';
 
 @theme {
   --spacing: 1px;
@@ -23,8 +24,8 @@
   --breakpoint-425: 426px;
   --breakpoint-375: 376px;
 
-  --font-heading: "loos-extrawide";
-  --font-body: "turnip";
+  --font-heading: 'loos-extrawide';
+  --font-body: 'turnip';
 
   --font-weight-book: 390;
 

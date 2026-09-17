@@ -1,0 +1,253 @@
+.page-headline {
+  @apply min-1024:pb-30 flex flex-col items-center gap-10 text-center;
+}
+
+.page-headline__eyebrow {
+  @apply font-heading text-heading-3 text-coral max-768:text-20 w-full font-normal uppercase;
+}
+
+.page-headline h1,
+.page-headline h2 {
+  @apply text-center;
+}
+
+.page-hero {
+  @apply relative w-full overflow-hidden;
+}
+
+.page-hero__bg {
+  @apply absolute inset-0 h-full w-full object-cover object-bottom;
+}
+
+.page-hero__overlay {
+  @apply absolute inset-0;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.5) 7.04%, rgba(0, 0, 0, 0.5) 26.42%, rgba(0, 0, 0, 0.5) 47.65%, rgba(0, 0, 0, 0.2) 71.92%, rgba(0, 0, 0, 0.2) 100%);
+}
+
+.page-hero__inner {
+  @apply max-1440:h-345 max-1199:h-300 max-768:h-260 relative flex h-410 items-center;
+}
+
+.map-info-section {
+  @apply relative overflow-hidden;
+}
+
+.map-info-section__inner {
+  @apply min-1512:max-w-1312 flex flex-col gap-50;
+}
+
+.map-info-section__contents {
+  @apply max-992:flex-col max-992:items-stretch max-1366:gap-40 flex items-stretch gap-100;
+}
+
+.map-info-section__map {
+  @apply rounded-10 max-992:w-full max-992:h-400 max-768:h-400 max-576:h-350 min-1024:w-600 relative w-400 shrink-0 overflow-hidden;
+}
+
+.map-info-section__map-embed {
+  @apply absolute top-[-40%] left-0 h-[180%] w-full border-0;
+}
+
+.map-info-section__texts {
+  @apply min-1024:gap-40 flex min-w-0 flex-1 flex-col gap-24;
+}
+
+.map-info-section__title {
+  @apply flex flex-col gap-10 uppercase;
+}
+
+.map-info-section__subtitle {
+  @apply font-heading text-heading-3 text-coral max-768:text-20 w-full font-normal uppercase;
+}
+
+.map-info-section__texts .content p {
+  @apply text-24 max-1024:text-18 leading-[29px];
+}
+
+.map-info-section__list {
+  @apply flex w-full flex-col gap-10;
+}
+
+.map-info-section__item {
+  @apply flex items-start gap-6;
+}
+
+.map-info-section__item img {
+  @apply mt-5 shrink-0 max-576:h-16 max-576:w-16;
+}
+
+.map-info-section__item--address {
+  @apply items-start;
+}
+
+.map-info-section__item--address img {
+  @apply mt-5 shrink-0 max-576:h-20 max-576:w-16;
+}
+
+.map-info-section__item--address a img {
+  @apply mt-5 shrink-0 max-576:h-18 max-576:w-16;
+}
+
+.map-info-section__item span {
+  @apply font-body font-book text-24 text-midnight max-1024:text-18 min-w-0 flex-1 leading-[29px];
+}
+
+.map-info-section__link {
+  @apply flex items-center gap-6 transition-colors duration-300;
+}
+
+.map-info-section__link:hover span {
+  @apply text-aqua;
+}
+
+.map-info-section__deco {
+  @apply max-1024:hidden pointer-events-none absolute -top-45 right-[-195px] flex items-center gap-10;
+}
+
+.map-info-section__deco-icon {
+  @apply mr-[6px] block rotate-90;
+}
+
+.deco-icon-joint {
+  @apply mr-[49px] block;
+}
+
+.contact-form-section {
+  @apply relative;
+}
+
+.contact-form-section__inner {
+  @apply min-1024:gap-50 flex flex-col items-center gap-34;
+}
+
+.contact-form-section__headline {
+  @apply flex max-w-1000 flex-col items-center gap-10 text-center;
+}
+
+.contact-form-section__eyebrow {
+  @apply font-heading text-heading-3 text-coral max-768:text-20 w-full font-normal uppercase;
+}
+
+.contact-form {
+  @apply flex w-full max-w-1000 flex-col items-center gap-20;
+}
+
+.contact-form__row {
+  @apply max-768:flex-col flex w-full items-start gap-20;
+}
+
+.contact-form__field {
+  @apply flex w-full min-w-0 flex-1 flex-col items-start gap-15;
+}
+
+.contact-form__label {
+  @apply font-body font-book text-20 w-full text-white;
+}
+
+.contact-form__input {
+  @apply rounded-pill font-body font-book text-20 h-44 w-full border-2 border-white bg-white/20 px-24 py-10 text-white placeholder-white outline-0;
+}
+
+.contact-form__textarea {
+  @apply h-140 resize-none;
+}
+
+.contact-form button {
+  @apply min-576:mt-30 mt-15;
+}
+
+.contact-form button:hover {
+  @apply bg-coral text-white;
+}
+
+.news-section {
+  @apply relative overflow-hidden;
+}
+
+.news-section__bg {
+  @apply absolute inset-0 h-full w-full object-cover;
+}
+
+.news-section__overlay {
+  @apply absolute inset-0 bg-black/60;
+}
+
+.news-section__inner {
+  @apply relative flex flex-col gap-50;
+}
+
+.news-section__contents {
+  @apply max-992:flex-col flex items-start gap-40;
+}
+
+.news-section__cards {
+  @apply max-992:w-full flex w-366 shrink-0 flex-col gap-24;
+}
+
+.news-card {
+  @apply flex w-full items-center;
+}
+
+.news-card__image {
+  @apply rounded-10 h-142 w-150 shrink-0 self-stretch object-cover;
+}
+
+.news-card__copy {
+  @apply flex min-w-0 flex-1 flex-col gap-5 py-32 pt-[10px] pr-[12px] pb-[10px] pl-[24px];
+}
+
+.news-card__meta {
+  @apply flex flex-col items-start;
+}
+
+.news-card__meta-row {
+  @apply font-body text-16 flex items-center gap-6 font-normal whitespace-nowrap text-white;
+}
+
+.news-card__title-wrap h3 {
+  @apply max-768:text-16 text-18 leading-normal font-normal;
+}
+
+.news-card__title-wrap h3 a {
+  @apply line-clamp-3 cursor-pointer leading-[23px] transition-colors duration-300;
+}
+
+.news-card__title-wrap h3 a:hover {
+  @apply text-aqua;
+}
+
+.news-featured {
+  @apply max-992:h-300 max-992:flex-none max-768:h-360 max-768:px-24 max-768:py-24 rounded-10 relative flex min-w-0 flex-1 items-end self-stretch overflow-hidden px-50 py-40;
+}
+
+.news-featured__bg {
+  @apply absolute inset-0 h-full w-full object-cover;
+}
+
+.news-featured__overlay {
+  @apply absolute inset-0 bg-linear-to-b from-black/16 from-60% to-black/40 to-85%;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.16) 60%, rgba(0, 0, 0, 0.4) 85%);
+}
+
+@media (max-width: 575px) {
+  .news-featured__overlay {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.16) 0%, rgba(0, 0, 0, 0.4) 0%) !important;
+  }
+}
+
+.news-featured__overlay {
+  @apply absolute inset-0 bg-linear-to-b from-black/16 from-60% to-black/40 to-85%;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.16) 60%, rgba(0, 0, 0, 0.4) 85%);
+}
+
+.news-featured__content {
+  @apply relative flex w-full flex-col gap-5;
+}
+
+.news-featured__meta {
+  @apply min-576:gap-16 flex flex-wrap items-start gap-8;
+}
+
+.news-featured__meta-row {
+  @apply font-body text-20 max-768:text-16 flex items-center gap-6 font-normal whitespace-nowrap text-white;
+}
