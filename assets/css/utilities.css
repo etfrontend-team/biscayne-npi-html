@@ -1,15 +1,15 @@
 /* ===== SIMPLE CONTENT WRAPPER SECTION ===== */
 
 .simple-content-wrapper__inner {
-  @apply flex flex-col gap-24 1024:flex-row 1024:items-end 1024:gap-40 1366:gap-100;
+  @apply 1024:flex-row 1024:items-end 1024:gap-40 1366:gap-100 flex flex-col gap-24;
 }
 
 .simple-content-wrapper__title-col {
-  @apply flex flex-col shrink-0 w-full gap-24 1024:max-w-400 1366:max-w-500 1024:gap-85;
+  @apply 1024:max-w-400 1366:max-w-500 1024:gap-85 flex w-full shrink-0 flex-col gap-24;
 }
 
 .simple-content-wrapper__title h2 {
-  @apply uppercase text-heading-4 max-1024:leading-30 1024:text-heading-2;
+  @apply text-heading-4 max-1024:leading-30 1024:text-heading-2 uppercase;
 }
 
 .simple-content-wrapper__deco-icons {
@@ -21,34 +21,33 @@
 }
 
 .simple-content-wrapper__content {
-  @apply flex flex-col gap-40 items-start 1024:flex-1 1024:items-end;
+  @apply 1024:flex-1 1024:items-end flex flex-col items-start gap-40;
 }
 
 .simple-content-wrapper__content .content p {
-  @apply text-16 leading-19 1024:text-20 1024:leading-24 1366:text-24 1366:leading-29;
+  @apply text-16 1024:text-20 1024:leading-24 1366:text-24 1366:leading-29 leading-19;
 }
 
-
 .simple-content-wrapper__actions .btn {
-  @apply w-fit max-1024:text-12 max-1024:leading-15 1024:text-18;
+  @apply max-1024:text-12 max-1024:leading-15 1024:text-18 w-fit;
 }
 
 /* ===== THREE CARD WRAPPER SECTION ===== */
 
 .three-card-wrapper__wrap {
-  @apply flex flex-col items-center gap-40 1199:gap-50;
+  @apply 1199:gap-50 flex flex-col items-center gap-40;
 }
 
 .three-card-wrapper__header {
-  @apply flex flex-col gap-24 items-start w-full max-w-1000 1199:gap-32;
+  @apply 1199:gap-32 flex w-full max-w-1000 flex-col items-start gap-24;
 }
 
 .three-card-wrapper__title-group {
-  @apply flex flex-col gap-10 items-center text-center uppercase w-full;
+  @apply flex w-full flex-col items-center gap-10 text-center uppercase;
 }
 
 .three-card-wrapper__eyebrow {
-  @apply font-heading font-normal text-20 text-coral w-full 1199:text-heading-3;
+  @apply font-heading text-20 text-coral 1199:text-heading-3 w-full font-normal;
 }
 
 .three-card-wrapper__title-group h2 {
@@ -60,11 +59,11 @@
 }
 
 .three-card-wrapper__header .content p {
-  @apply text-16 leading-22 1199:text-24 1199:leading-29;
+  @apply text-16 1199:text-24 1199:leading-29 leading-22;
 }
 
 .swiper.three-card-wrapper__cards {
-  @apply w-full overflow-visible 1024:overflow-hidden 1024:max-w-1312 1024:mx-auto;
+  @apply 1024:overflow-hidden 1024:max-w-1312 1024:mx-auto w-full overflow-visible;
 }
 
 .three-card-wrapper__cards .swiper-wrapper {
@@ -72,15 +71,15 @@
 }
 
 .three-card-wrapper__cards .swiper-slide {
-  @apply w-326 h-auto 1199:w-410;
+  @apply 1199:w-410 h-auto w-326;
 }
 
 .adventure-card.three-card-wrapper__card {
-  @apply max-768:h-520 h-450 1199:h-600;
+  @apply max-768:h-520 1199:h-600 h-450;
 }
 
 .three-card-wrapper__card .adventure-card__inner {
-  @apply px-24 py-28 1199:pt-28 1199:pb-40 1199:px-28;
+  @apply 1199:pt-28 1199:pb-40 1199:px-28 px-24 py-28;
 }
 
 .three-card-wrapper__card .adventure-card__badge {
@@ -88,7 +87,7 @@
 }
 
 .three-card-wrapper__card .adventure-card__title h3 {
-  @apply text-18 leading-23 1199:text-heading-4 1199:leading-30;
+  @apply text-18 1199:text-heading-4 1199:leading-30 max-1199:leading-[23px];
 }
 
 .three-card-wrapper__card .btn {
@@ -96,24 +95,24 @@
 }
 
 .three-card-wrapper__card-body {
-  @apply flex flex-col gap-20 w-full 1199:gap-30;
+  @apply 1199:gap-30 flex w-full flex-col gap-20;
 }
 
 .three-card-wrapper__scrollbar {
   --swiper-scrollbar-bg-color: #d5d3ba;
   --swiper-scrollbar-drag-bg-color: #80d6cf;
   --swiper-scrollbar-border-radius: 10px;
-  @apply h-3 opacity-100 relative! w-full! bottom-auto! left-auto! 1024:hidden;
+  @apply 1024:hidden relative! bottom-auto! left-auto! h-3 w-full! opacity-100;
 }
 
 /* ===== SEARCH BAR SECTION ===== */
 
 .search-bar-section__inner {
-  @apply px-60 max-1199:px-30 1512:max-w-1700 1512:mx-auto min-[1700px]:px-0;
+  @apply max-1199:px-30 1512:max-w-1700 1512:mx-auto px-60 min-[1700px]:px-0;
 }
 
 .search-bar {
-  @apply flex flex-col items-stretch w-full gap-20;
+  @apply flex w-full flex-col items-stretch gap-20;
 }
 
 @media (min-width: 1024px) {
@@ -126,7 +125,7 @@
 }
 
 .search-bar__field {
-  @apply relative shrink-0 min-w-0 w-full;
+  @apply relative w-full min-w-0 shrink-0;
 }
 
 @media (min-width: 1024px) {
@@ -145,74 +144,74 @@
 }
 
 .search-bar__trigger {
-  @apply flex items-center max-1023:justify-between 1366:justify-between gap-4 py-16 w-full text-left bg-transparent border-0 cursor-pointer 1024:py-8 1366:gap-20 1199:py-16;
+  @apply max-1023:justify-between 1366:justify-between 1024:py-8 1366:gap-20 1199:py-16 flex w-full cursor-pointer items-center gap-4 border-0 bg-transparent py-16 text-left;
 }
 
 .search-bar__copy {
-  @apply flex flex-col gap-10 items-start min-w-0 1024:gap-4 1199:gap-10;
+  @apply 1024:gap-4 1199:gap-10 flex min-w-0 flex-col items-start gap-10;
 }
 
 .search-bar__title h3 {
-  @apply text-heading-4 uppercase whitespace-nowrap 1023:text-16 1024:whitespace-normal 1199:text-heading-4 1199:whitespace-nowrap;
+  @apply text-heading-4 1023:text-16 1024:whitespace-normal 1199:text-heading-4 1199:whitespace-nowrap whitespace-nowrap uppercase;
 }
 
 .search-bar__hint {
-  @apply font-body text-18 1023:text-14 font-book text-midnight text-left whitespace-nowrap max-1024:whitespace-normal  1199:block 1199:text-18;
+  @apply font-body text-18 1023:text-14 font-book text-midnight max-1024:whitespace-normal 1199:block 1199:text-18 text-left whitespace-nowrap;
 }
 
 .search-bar__chevron {
-  @apply rotate-90 transition-transform duration-300 shrink-0 1024:w-8 1024:h-14 1199:w-12 1199:h-20;
+  @apply 1024:w-8 1024:h-14 1199:w-12 1199:h-20 shrink-0 rotate-90 transition-transform duration-300;
 }
 
-.search-bar__trigger[aria-expanded="true"] .search-bar__chevron {
+.search-bar__trigger[aria-expanded='true'] .search-bar__chevron {
   @apply -rotate-90;
 }
 
 .search-bar__panel {
-  @apply absolute top-full left-0 mt-10 bg-white rounded-10 shadow-default py-20 z-10 max-h-320 overflow-y-auto;
+  @apply rounded-10 shadow-default absolute top-full left-0 z-10 mt-10 max-h-320 overflow-y-auto bg-white py-20;
 }
 
 .search-bar__panel--destination {
-  @apply w-360 max-1024:w-full;
+  @apply max-1024:w-full w-360;
 }
 
 .search-bar__panel--activity {
-  @apply w-340 max-1024:w-full;
+  @apply max-1024:w-full w-340;
 }
 
 .search-bar__panel--trip-length {
-  @apply w-320 max-1024:w-full;
+  @apply max-1024:w-full w-320;
 }
 
 .search-bar__panel--departure-month {
-  @apply w-389 max-1024:w-full py-30 px-30;
+  @apply max-1024:w-full w-389 px-30 py-30;
 }
 
 .search-bar__option {
-  @apply mx-10 px-10 py-10 rounded-10 text-20 font-body text-midnight cursor-pointer hover:bg-limestone-light;
+  @apply rounded-10 text-20 font-body text-midnight hover:bg-limestone-light mx-10 cursor-pointer px-10 py-10;
 }
 
-.search-bar__option[aria-selected="true"] {
+.search-bar__option[aria-selected='true'] {
   @apply bg-aqua;
 }
 
 .search-bar__checkbox-row {
-  @apply flex items-center gap-15 px-10 py-10 w-full text-left bg-transparent border-0 cursor-pointer rounded-10 hover:bg-limestone-light;
+  @apply rounded-10 hover:bg-limestone-light flex w-full cursor-pointer items-center gap-15 border-0 bg-transparent px-10 py-10 text-left;
 }
 
 .search-bar__checkbox {
-  @apply flex items-center justify-center size-20 rounded-4 border border-solid border-midnight shrink-0;
+  @apply rounded-4 border-midnight flex size-20 shrink-0 items-center justify-center border border-solid;
 }
 
 .search-bar__checkbox img {
   @apply opacity-0;
 }
 
-.search-bar__checkbox-row[aria-checked="true"] .search-bar__checkbox {
+.search-bar__checkbox-row[aria-checked='true'] .search-bar__checkbox {
   @apply bg-aqua/50;
 }
 
-.search-bar__checkbox-row[aria-checked="true"] .search-bar__checkbox img {
+.search-bar__checkbox-row[aria-checked='true'] .search-bar__checkbox img {
   @apply opacity-100;
 }
 
@@ -221,11 +220,11 @@
 }
 
 .search-bar__date-row {
-  @apply flex items-center gap-10 px-20 py-10 rounded-10 bg-aqua/50 cursor-pointer;
+  @apply rounded-10 bg-aqua/50 flex cursor-pointer items-center gap-10 px-20 py-10;
 }
 
 .search-bar__date-input {
-  @apply flex-1 min-w-0 text-20 font-body text-midnight bg-transparent border-0 cursor-pointer;
+  @apply text-20 font-body text-midnight min-w-0 flex-1 cursor-pointer border-0 bg-transparent;
 }
 
 .search-bar__date-input::-webkit-calendar-picker-indicator {
@@ -233,7 +232,7 @@
 }
 
 .search-bar__submit {
-  @apply flex items-center justify-center gap-10 w-full px-20 py-12 rounded-pill border-2 border-solid border-midnight bg-transparent shrink-0 cursor-pointer;
+  @apply rounded-pill border-midnight flex w-full shrink-0 cursor-pointer items-center justify-center gap-10 border-2 border-solid bg-transparent px-20 py-12;
 }
 
 @media (min-width: 1024px) {
@@ -245,7 +244,7 @@
 }
 
 .search-bar__submit-label {
-  @apply font-heading text-12 uppercase text-midnight;
+  @apply font-heading text-12 text-midnight uppercase;
 }
 
 @media (min-width: 1024px) {
@@ -255,7 +254,7 @@
 }
 
 .search-bar__submit-icon {
-  @apply flex items-center justify-center size-24 rounded-full bg-midnight shrink-0 1199:size-40;
+  @apply bg-midnight 1199:size-40 flex size-24 shrink-0 items-center justify-center rounded-full;
 }
 
 @media (min-width: 1024px) {
@@ -266,7 +265,7 @@
 }
 
 .search-bar__submit-icon img {
-  @apply w-12 h-12 1199:w-18 1199:h-18;
+  @apply 1199:w-18 1199:h-18 h-12 w-12;
 }
 
 @media (min-width: 1024px) {
@@ -287,7 +286,7 @@
 } */
 @media (min-width: 1024px) and (max-width: 1700px) {
   .popular-adventures-section .container-fluid-lg {
-    @apply pe-0 max-w-none;
+    @apply max-w-none pe-0;
   }
 }
 @media (min-width: 1199px) and (max-width: 1700px) {
@@ -296,9 +295,8 @@
   }
 }
 
-
 .popular-adventures-section__bg {
-  @apply absolute inset-0 w-full h-full object-cover;
+  @apply absolute inset-0 h-full w-full object-cover;
 }
 
 .popular-adventures-section__overlay {
@@ -306,11 +304,11 @@
 }
 
 .popular-adventures-section__inner {
-  @apply relative flex gap-80 items-start max-992:flex-col max-1024:gap-40 z-5;
+  @apply max-992:flex-col max-1024:gap-40 relative z-5 flex items-start gap-80;
 }
 
 .popular-adventures-section__header {
-  @apply flex flex-col gap-32 shrink-0 max-1199:gap-24 w-400 max-992:w-full;
+  @apply max-1199:gap-24 max-992:w-full flex w-400 shrink-0 flex-col gap-32;
 }
 
 .popular-adventures-section__header .btn {
@@ -338,16 +336,15 @@
 }
 
 .popular-adventures-section__deco-icon {
-  @apply w-45 h-auto object-contain absolute right-[11%] bottom-[48%] translate-y-[50%] max-1440:bottom-[25%] max-1440:translate-y-13 max-1440:right-[22%] max-1024:right-[43%] max-1024:translate-x-[62%]
-   max-1024:w-25  max-1024:bottom-[29%] max-425:right-[32%] max-1440:w-30;
+  @apply max-1440:bottom-[25%] max-1440:translate-y-13 max-1440:right-[22%] max-1024:right-[43%] max-1024:translate-x-[62%] max-1024:w-25 max-1024:bottom-[29%] max-425:right-[32%] max-1440:w-30 absolute right-[11%] bottom-[48%] h-auto w-45 translate-y-[50%] object-contain;
 }
 
 .popular-adventures-section__slider {
-  @apply relative max-576:max-w-full flex-1 flex flex-col gap-80 max-992:gap-40 min-w-0 overflow-hidden w-full;
+  @apply max-576:max-w-full max-992:gap-40 relative flex w-full min-w-0 flex-1 flex-col gap-80 overflow-hidden;
 }
 
 .popular-adventures-section__deco-icons {
-  @apply absolute -bottom-[7.5%] max-1024:-bottom-[5%] max-576:-bottom-[5%] -left-10 max-576:-left-32 flex items-end gap-6 pointer-events-none max-w-510;
+  @apply max-1024:-bottom-[5%] max-576:-bottom-[5%] max-576:-left-32 pointer-events-none absolute -bottom-[7.5%] -left-10 flex max-w-510 items-end gap-6;
 }
 
 .popular-adventures-section__deco-icons img {
@@ -360,28 +357,28 @@
 /* ===== ADVENTURE CARD ===== */
 
 .adventure-card {
-  @apply relative h-600 max-768:h-540 rounded-10 overflow-hidden flex flex-col;
+  @apply max-768:h-540 rounded-10 relative flex h-600 flex-col overflow-hidden;
 }
 
 .adventure-card__bg {
-  @apply absolute inset-0 w-full h-full object-cover;
+  @apply absolute inset-0 h-full w-full object-cover;
 }
 
 .adventure-card__overlay {
-  @apply absolute inset-0 rounded-10;
+  @apply rounded-10 absolute inset-0;
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 33.9%, rgba(0, 0, 0, 0.7) 51.7%);
 }
 
 .adventure-card__inner {
-  @apply h-full relative flex flex-col justify-between flex-1 pt-28 pb-40 px-28 max-768:pb-32 max-768:px-24;
+  @apply max-768:pb-32 max-768:px-24 relative flex h-full flex-1 flex-col justify-between px-28 pt-28 pb-40;
 }
 
 .adventure-card__top {
-  @apply flex items-start justify-between w-full;
+  @apply flex w-full items-start justify-between;
 }
 
 .adventure-card__badge {
-  @apply min-h-32 inline-flex leading-none items-center px-12 py-6 rounded-pill font-heading text-16 font-normal uppercase text-white whitespace-nowrap;
+  @apply rounded-pill font-heading text-14 1199:text-16 text-primary-black inline-flex min-h-32 items-center px-12 py-6 leading-none font-normal whitespace-nowrap uppercase;
 }
 
 .adventure-card__badge--teal {
@@ -401,8 +398,7 @@
 }
 
 .adventure-card__popular {
-  @apply min-h-42 inline-flex items-center px-24 py-10 rounded-full font-body leading-none font-book text-18 text-white whitespace-nowrap 
-  border border-solid border-white bg-midnight/80 max-768:hidden;
+  @apply font-body font-book text-18 bg-midnight/80 max-768:hidden inline-flex min-h-42 items-center rounded-full border border-solid border-white px-24 py-10 leading-none whitespace-nowrap text-white;
 }
 
 .adventure-card__bottom {
@@ -414,15 +410,15 @@
 }
 
 .adventure-card__price {
-  @apply font-heading font-bold text-heading-4 max-768:text-20 text-aqua uppercase;
+  @apply font-heading text-heading-4 max-768:text-20 text-aqua font-bold uppercase;
 }
 
 .adventure-card__title h3 {
-  @apply text-heading-4 max-768:text-18 uppercase;
+  @apply text-heading-4 max-768:text-18 max-1199:leading-[23px] leading-normal uppercase;
 }
 
 .adventure-card__meta {
-  @apply flex items-center gap-16 flex-wrap max-w-340;
+  @apply flex max-w-340 flex-wrap items-center gap-x-16 gap-y-10;
 }
 
 .adventure-card__meta-row {
@@ -433,7 +429,7 @@
   @apply flex items-center gap-6;
 }
 .adventure-card__meta-item span {
-  @apply font-body text-20 max-768:text-16 text-white whitespace-nowrap;
+  @apply font-body text-20 max-768:text-16 whitespace-nowrap text-white;
 }
 
 .adventure-card__meta-item img {
@@ -448,13 +444,21 @@
   @apply w-fit;
 }
 
+.adventure-card__actions .btn:first-child {
+  @apply max-768:text-12! max-768:leading-15!;
+}
+
+.adventure-card__actions .btn:nth-child(2) {
+  @apply max-768:text-12! max-768:leading-15!;
+}
+
 /* ===== ADVENTURES SCROLLBAR ===== */
 
 .popular-adventures-scrollbar {
   --swiper-scrollbar-bg-color: #fdfdfd;
   --swiper-scrollbar-drag-bg-color: #80d6cf;
   --swiper-scrollbar-border-radius: 10px;
-  @apply max-w-712 h-4 rounded-10 overflow-hidden opacity-100 relative! w-full! bottom-auto! left-auto!;
+  @apply rounded-10 relative! bottom-auto! left-auto! h-4 w-full! max-w-712 overflow-hidden opacity-100;
 }
 
 .popular-adventures-scrollbar .swiper-scrollbar-drag {
@@ -464,13 +468,13 @@
 /* ===== SWIPER OVERRIDES ===== */
 
 .popular-adventures-swiper {
-  @apply overflow-visible w-full relative;
+  @apply relative w-full overflow-visible;
 }
 
 .popular-adventures-swiper .swiper-slide {
-  @apply w-410 max-576:w-full max-768:w-350 min-h-600 max-768:min-h-540 flex;
+  @apply max-576:w-full max-768:w-350 max-768:min-h-540 flex min-h-600 w-410;
 }
 
 .popular-adventures-section__slider .swiper-scrollbar {
-  @apply left-0! 
+  @apply left-0!;
 }

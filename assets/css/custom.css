@@ -3,7 +3,7 @@
 }
 
 .page-headline__eyebrow {
-  @apply font-heading text-heading-3 text-coral max-768:text-20 w-full font-normal uppercase;
+  @apply font-heading text-heading-3 text-coral max-768:text-20 max-1199:leading-[25px] w-full leading-[40px] font-normal uppercase;
 }
 
 .page-headline h1,
@@ -73,7 +73,7 @@
 }
 
 .map-info-section__item img {
-  @apply mt-5 shrink-0 max-576:h-16 max-576:w-16;
+  @apply max-576:h-16 max-576:w-16 mt-5 shrink-0;
 }
 
 .map-info-section__item--address {
@@ -81,11 +81,11 @@
 }
 
 .map-info-section__item--address img {
-  @apply mt-5 shrink-0 max-576:h-20 max-576:w-16;
+  @apply max-576:h-20 max-576:w-16 mt-5 shrink-0;
 }
 
 .map-info-section__item--address a img {
-  @apply mt-5 shrink-0 max-576:h-18 max-576:w-16;
+  @apply max-576:h-18 max-576:w-16 mt-5 shrink-0;
 }
 
 .map-info-section__item span {
@@ -250,4 +250,209 @@
 
 .news-featured__meta-row {
   @apply font-body text-20 max-768:text-16 flex items-center gap-6 font-normal whitespace-nowrap text-white;
+}
+
+/* ===== SECTION INTRO ===== */
+
+.section-intro {
+  @apply max-768:gap-20 mx-auto flex max-w-1000 flex-col gap-32 text-center;
+}
+
+.section-intro .page-headline {
+  @apply min-1024:pb-0;
+}
+
+.section-intro .content p {
+  @apply text-24 max-1024:text-18 max-768:text-16 max-768:leading-[22px] leading-[29px];
+}
+
+/* ===== TOURS SECTION (All Tours) ===== */
+
+.tours-section__deco-icons {
+  @apply max-1024:hidden pointer-events-none absolute flex h-118 items-center gap-6;
+}
+
+.tours-section__deco-icons--top {
+  @apply -top-18 -left-186;
+}
+
+.tours-section__deco-icons--bottom {
+  @apply -right-180 -bottom-49;
+}
+
+.tours-section__deco-icon-wrap {
+  @apply flex shrink-0 items-center justify-center overflow-hidden;
+}
+
+.tours-section__deco-icon-wrap--narrow {
+  @apply h-112 w-81;
+}
+
+.tours-section__deco-icon-wrap--wide {
+  @apply h-112 w-165;
+}
+
+.tours-section__deco-icon {
+  @apply shrink-0 rotate-90;
+}
+
+.tours-section__deco-icon-wrap--narrow img {
+  @apply shrink-0 rotate-0;
+}
+
+/* ===== FILTER TABS ===== */
+
+.filter-tabs {
+  @apply max-768:flex-col max-768:items-stretch max-768:gap-14 flex items-center gap-20;
+}
+
+.filter-tabs__label {
+  @apply font-body text-20 text-midnight max-768:text-16 font-bold whitespace-nowrap;
+}
+
+.filter-tabs__group {
+  @apply border-aqua max-768:flex-col flex w-full flex-1 items-stretch justify-center rounded-[23px] border-2 border-solid bg-white;
+}
+
+.filter-tabs__tab {
+  @apply rounded-pill font-heading text-20 text-midnight max-1024:text-16 max-768:w-full max-1024:px-10 max-1024:py-6 flex flex-1 cursor-pointer items-center justify-center px-20 py-[12.5px] whitespace-nowrap uppercase transition-colors duration-300;
+}
+
+.filter-tabs__tab.is-active {
+  @apply bg-aqua font-bold;
+}
+
+.filter-tabs__tab:focus {
+  @apply outline-none!;
+}
+
+.filter-tabs__tab:focus-visible {
+  @apply outline-aqua! outline-2! outline-offset-2!;
+}
+
+/* ===== CARDS GRID ===== */
+
+.cards-grid {
+  @apply max-1199:grid-cols-2 max-1199:gap-30 max-640:grid-cols-1 max-768:grid-cols-2 max-768:gap-20 grid grid-cols-3 gap-40 transition-opacity duration-200 ease-out;
+}
+
+.cards-grid.is-fading {
+  @apply opacity-0;
+}
+
+.cards-grid .adventure-card[hidden] {
+  @apply hidden;
+}
+
+/* ===== PAGINATION ===== */
+
+.pagination {
+  @apply max-576:flex-wrap max-768:gap-5 flex items-center justify-center gap-20;
+}
+
+.pagination__nav {
+  @apply rounded-pill font-heading text-20 text-coral max-768:text-16 min-576:px-20 flex cursor-pointer items-center gap-10 px-10 py-10 whitespace-nowrap uppercase transition-colors duration-300;
+}
+
+.pagination__nav:disabled {
+  @apply cursor-not-allowed opacity-50;
+}
+
+.pagination__nav:focus {
+  @apply outline-none!;
+}
+
+.pagination__nav:focus-visible {
+  @apply outline-coral! outline-2! outline-offset-2!;
+}
+
+.pagination__chevron--prev {
+  @apply rotate-180;
+}
+
+.pagination__pages {
+  @apply flex items-center gap-10;
+}
+
+.pagination__page {
+  @apply border-coral font-heading text-20 text-coral max-768:text-16 max-768:h-40 max-768:w-40 flex h-45 w-45 cursor-pointer items-center justify-center rounded-full border border-solid uppercase transition-colors duration-300;
+}
+
+.pagination__page.is-active {
+  @apply bg-coral border-coral text-black;
+}
+
+.pagination__page:disabled {
+  @apply cursor-not-allowed opacity-40;
+}
+
+.pagination__page:focus {
+  @apply outline-none!;
+}
+
+.pagination__page:focus-visible {
+  @apply outline-coral! outline-2! outline-offset-2!;
+}
+
+.adventure-card__title h3 {
+  @apply max-1199:leading-[23px]! leading-[30px]!;
+}
+/* gap-x-16 gap-y-10 */
+
+/* ===== PHOTO CALLOUT SECTION (Location) ===== */
+
+.photo-callout-section__bg {
+  @apply absolute inset-0 h-full w-full object-cover;
+}
+
+.photo-callout-card {
+  @apply bg-limestone-light max-768:gap-20 max-768:p-24 rounded-10 relative flex w-560 max-w-full min-w-0 flex-col items-center gap-28 p-40;
+}
+
+.photo-callout-card__media {
+  @apply max-768:h-200 relative h-240 w-full;
+}
+
+.photo-callout-card__media img {
+  @apply block h-full w-full object-cover;
+}
+
+.photo-callout-card__title h3 {
+  @apply min-576:text-heading-4 leading-[30px] uppercase;
+}
+
+.photo-callout-card__source {
+  @apply font-body text-16 text-midnight w-full text-center leading-[19px];
+}
+
+.photo-callout-card__source a {
+  @apply text-coral font-bold;
+}
+
+.photo-callout-card-contents p {
+  @apply text-center leading-[19px];
+}
+
+/* ===== LOCATIONS SECTION (Our Locations) ===== */
+
+.locations-section__deco {
+  @apply max-1024:hidden pointer-events-none absolute;
+}
+
+.locations-section__deco--bottom-left {
+  @apply bottom-44 left-0;
+}
+
+.locations-section__deco--top-right {
+  @apply -top-3 -right-3;
+}
+
+.content-biscayne-locations p {
+  @apply text-left leading-[29px];
+}
+/* max-768:text-12! max-768:leading-15!; */
+
+.ctm-biscayne-eco-adventures .section-intro .page-headline h2,
+.ctm-biscayne-locations .section-intro .page-headline h2 {
+  @apply max-576:text-24! max-576:leading-30!;
 }
