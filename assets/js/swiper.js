@@ -115,9 +115,64 @@ export function initHeroSlider() {
   });
 }
 
+export function initFeaturedStory() {
+  const featuredStory = document.querySelector('.featured-story');
+  const swiperEl = document.querySelector('.featured-story__swiper');
+  if (!featuredStory || !swiperEl) return;
+
+  const prevBtn = featuredStory.querySelector('[data-featured-prev]');
+  const nextBtn = featuredStory.querySelector('[data-featured-next]');
+
+  const alignArrowsToMedia = () => {
+    const activeMedia = swiperEl.querySelector('.swiper-slide-active .featured-story__media');
+    if (!activeMedia) return;
+
+    const top = `${activeMedia.offsetHeight / 2}px`;
+
+    if (prevBtn) prevBtn.style.top = top;
+    if (nextBtn) nextBtn.style.top = top;
+  };
+
+  const swiper = new Swiper(swiperEl, {
+    slidesPerView: 1,
+    spaceBetween: 16,
+    speed: 600,
+    watchOverflow: false,
+    autoHeight: true,
+    observer: true,
+    observeParents: true,
+    navigation: {
+      prevEl: '[data-featured-prev]',
+      nextEl: '[data-featured-next]',
+    },
+    on: {
+      slideChangeTransitionEnd: alignArrowsToMedia,
+    },
+  });
+
+  const refresh = () => {
+    swiper.updateAutoHeight(0);
+    alignArrowsToMedia();
+  };
+
+  swiperEl.querySelectorAll('img').forEach((img) => {
+    if (img.complete) return;
+    img.addEventListener('load', refresh, { once: true });
+  });
+
+  if (document.fonts && document.fonts.ready) {
+    document.fonts.ready.then(refresh);
+  }
+
+  window.addEventListener('resize', alignArrowsToMedia, { passive: true });
+  swiper.on('resize', alignArrowsToMedia);
+  alignArrowsToMedia();
+}
+
 export function initSwipers() {
   initHeaderNotice();
   initHeroSlider();
   initPopularAdventures();
   initThreeCardWrapper();
+  initFeaturedStory();
 }
