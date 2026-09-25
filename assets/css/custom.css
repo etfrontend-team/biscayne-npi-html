@@ -397,7 +397,6 @@
 .adventure-card__title h3 {
   @apply max-1199:leading-[23px]! leading-[30px]!;
 }
-/* gap-x-16 gap-y-10 */
 
 /* ===== PHOTO CALLOUT SECTION (Location) ===== */
 
@@ -450,7 +449,6 @@
 .content-biscayne-locations p {
   @apply text-left leading-[29px];
 }
-/* max-768:text-12! max-768:leading-15!; */
 
 .ctm-biscayne-eco-adventures .section-intro .page-headline h2,
 .ctm-biscayne-locations .section-intro .page-headline h2 {
@@ -488,7 +486,7 @@
 }
 
 .featured-story__media {
-  @apply rounded-10 max-1199:max-w-400 992:max-1199:aspect-auto 992:max-1199:self-stretch max-992:max-w-none relative w-full max-w-676 shrink-0 self-start overflow-hidden aspect-3/2;
+  @apply rounded-10 max-1199:max-w-400 992:max-1199:aspect-auto 992:max-1199:self-stretch max-992:max-w-none relative aspect-3/2 w-full max-w-676 shrink-0 self-start overflow-hidden;
 }
 
 .featured-story__image {
@@ -623,7 +621,7 @@
 }
 
 .blog-card {
-  @apply max-768:h-450 rounded-10 relative flex max-1024:h-430 h-550 flex-col items-start justify-end overflow-hidden p-20;
+  @apply max-768:h-450 rounded-10 max-1024:h-430 relative flex h-550 flex-col items-start justify-end overflow-hidden p-20;
 }
 
 .blog-card__bg {
@@ -665,4 +663,262 @@
 
 .blog-card__excerpt {
   @apply font-body font-book text-20 line-clamp-3 leading-24 text-white;
+}
+
+/* ===== SUPPORT SECTION ===== */
+
+.support-section__inner {
+  @apply max-1199:gap-40 max-768:gap-30 flex flex-col gap-50;
+}
+
+.support-section__content {
+  @apply max-768:flex-col flex w-full items-stretch;
+}
+
+.support-section__copy {
+  @apply rounded-tl-10 rounded-bl-10 max-1199:p-40 max-1024:gap-24 max-1024:p-30 max-768:p-24 max-768:w-full max-768:basis-auto max-768:rounded-tl-10 max-768:rounded-tr-10 max-768:rounded-bl-none flex min-w-0 grow basis-1/2 flex-col justify-center gap-40 bg-white p-55;
+}
+
+.support-section__copy .content p {
+  @apply text-24 max-1024:text-20 max-1024:leading-24 max-992:text-18 max-992:leading-22 max-768:text-16 max-768:leading-normal leading-29;
+}
+
+.support-section__image {
+  @apply rounded-tr-10 rounded-br-10 max-768:h-320 max-768:w-full max-768:flex-none max-768:rounded-tr-none max-768:rounded-br-10 max-768:rounded-bl-10 relative min-w-0 grow basis-1/2 overflow-hidden;
+}
+
+.support-section__image img {
+  @apply absolute inset-0 h-full w-full object-cover;
+}
+
+.support-section__cards {
+  @apply max-1024:gap-20 max-768:flex-col flex w-full gap-30;
+}
+
+.support-card {
+  @apply rounded-10 max-1024:gap-12 max-1024:p-20 max-768:p-24 flex flex-1 flex-col gap-15 bg-white p-30;
+}
+
+.support-card__copy {
+  @apply flex w-full flex-col gap-10;
+}
+
+.support-card__copy .title h3 {
+  @apply text-heading-4 max-1199:text-20 max-1199:leading-25 max-1024:text-16 max-1024:leading-20 max-768:text-18 max-768:leading-22 leading-30;
+}
+
+.support-card__copy .content p {
+  @apply text-24 max-1199:text-20 max-1199:leading-24 max-1024:text-16 max-1024:leading-20 max-768:text-16 max-768:leading-normal leading-29;
+}
+
+.support-section__note {
+  @apply mx-auto w-full max-w-1000;
+}
+
+.support-section__note .content p {
+  @apply text-24 max-1024:text-20 max-1024:leading-24 max-992:text-18 max-992:leading-22 max-768:text-16 max-768:leading-normal leading-29;
+}
+
+/* ===== CTA BORDER SECTION ===== */
+
+.cta-border-section {
+  @apply relative z-1;
+}
+
+.cta-border-section__actions {
+  @apply flex justify-center;
+}
+
+.cta-border-section__border {
+  @apply max-768:-bottom-30 pointer-events-none absolute -bottom-50 left-0 flex w-full overflow-hidden;
+}
+
+.cta-border-section__border img {
+  @apply max-768:h-74 max-768:w-auto max-w-none shrink-0;
+}
+
+/* ===== IMAGE WITH CONTENT SECTION ===== */
+
+.title-coral h1,
+.title-coral h2,
+.title-coral h3,
+.title-coral h4,
+.title-coral h5,
+.title-coral h6 {
+  @apply text-coral;
+}
+
+.image-with-content-section__inner {
+  @apply max-768:gap-40 mx-auto flex w-full max-w-1212 flex-col gap-50;
+}
+
+.image-with-content-section__contents {
+  @apply max-1199:gap-60 max-1024:gap-40 max-768:flex-col max-768:items-stretch flex w-full items-center gap-100;
+}
+
+.image-with-content-section__image {
+  @apply max-1199:basis-2/5 max-768:basis-auto max-768:w-full shrink-0 basis-500;
+}
+
+.image-with-content-section__image img {
+  @apply max-768:aspect-4/3 max-768:object-cover block h-auto w-full;
+}
+
+.image-with-content-section__texts {
+  @apply max-1024:gap-24 flex min-w-0 flex-1 flex-col gap-32;
+}
+
+.image-with-content-section__heading {
+  @apply flex flex-col gap-10;
+}
+
+.image-with-content-section__subheader h3 {
+  @apply max-1024:text-20 max-1024:leading-25 max-768:text-16 max-768:leading-20 font-normal;
+}
+
+.icon-list-cards {
+  @apply max-1024:gap-4 max-768:max-w-none flex w-full max-w-505 flex-col gap-12;
+}
+
+.icon-list-cards__item {
+  @apply rounded-10 max-1024:gap-16 max-1024:px-0 flex items-start gap-20 px-20 py-16;
+}
+
+.icon-list-cards__item > img {
+  @apply shrink-0;
+}
+
+.icon-list-cards__copy {
+  @apply max-768:gap-10 flex min-w-0 flex-1 flex-col gap-15;
+}
+
+.icon-list-cards__copy .content p {
+  @apply text-20 max-768:text-18 max-768:leading-22 leading-24 font-normal break-words;
+}
+
+.icon-list-cards__copy .content a {
+  @apply hover:text-coral transition-colors duration-300;
+}
+
+.icon-list-cards__link {
+  @apply font-heading text-16 text-coral hover:text-midnight self-start leading-20 uppercase underline decoration-1 underline-offset-4 transition-colors duration-300;
+}
+
+@utility scrollbar-none {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+
+.expand-cards {
+  @apply max-1024:cursor-grab max-1024:overflow-x-auto max-1024:overflow-y-hidden relative h-400 w-full scrollbar-none;
+}
+
+.expand-cards.is-dragging {
+  @apply cursor-grabbing;
+}
+
+.expand-cards__card {
+  @apply rounded-tl-10 rounded-br-10 absolute top-0 flex h-full cursor-pointer flex-col justify-end overflow-hidden outline-none;
+}
+
+.expand-cards__card-image {
+  @apply pointer-events-none absolute inset-0 h-full w-full object-cover;
+}
+
+.expand-cards__card-overlay {
+  @apply from-midnight/40 to-midnight pointer-events-none absolute inset-0 bg-linear-to-t from-60% to-85% opacity-20 transition-opacity duration-1000;
+}
+
+.expand-cards__card.is-active .expand-cards__card-overlay {
+  @apply opacity-40;
+}
+
+.expand-cards__card-content {
+  @apply max-1024:p-20 invisible absolute inset-x-0 bottom-0 z-10 flex translate-y-10 flex-col gap-10 px-30 py-24 opacity-0 transition duration-250 ease-out;
+}
+
+.expand-cards__card.is-active .expand-cards__card-content {
+  @apply visible translate-y-0 opacity-100 delay-500 duration-400;
+}
+
+.expand-cards__card-title h3 {
+  @apply text-heading-4 max-768:text-20 max-768:leading-25 leading-30;
+}
+
+.expand-cards__card-body p {
+  @apply text-24 max-1024:text-20 max-1024:leading-24 max-992:text-18 max-992:leading-22 max-768:text-18 max-768:leading-22 max-768:pb-0 pb-8 leading-29;
+}
+
+.expand-cards__card-link {
+  @apply font-heading text-20 max-1024:text-16 max-1024:leading-20 self-start leading-25 text-white uppercase underline decoration-from-font underline-offset-5;
+}
+
+.expand-cards__card:focus-visible {
+  @apply outline-coral outline-2 outline-offset-2;
+}
+
+.expand-cards__card.is-leaving .expand-cards__card-content {
+  @apply visible;
+}
+
+/* ===== IMAGE CARDS SECTION (Swiper) ===== */
+
+
+@utility bg-image-cards-overlay {
+  background:
+    radial-gradient(123.84% 68.09% at 50% 50%, rgb(0 48 68 / 0.55) 0%, rgb(0 24 34 / 0.275) 50%, rgb(0 0 0 / 0) 100%), linear-gradient(0deg, rgb(0 48 68 / 0.24) 0%, rgb(0 48 68 / 0.24) 100%);
+}
+
+.image-cards-section {
+  @apply relative w-full;
+}
+
+.image-cards-section__slider {
+  @apply w-full;
+}
+
+.image-cards-section__card {
+  @apply max-768:min-h-450 relative flex h-auto! min-h-550 w-full flex-col overflow-hidden;
+}
+
+.image-cards-section__card-image {
+  @apply pointer-events-none absolute inset-0 h-full w-full object-cover;
+}
+
+.image-cards-section__card-overlay {
+  @apply pointer-events-none absolute inset-0;
+  background: radial-gradient(123.84% 68.09% at 50% 50%, rgba(0, 48, 68, 0.55) 0%, rgba(0, 0, 0, 0) 100%), linear-gradient(0deg, rgba(0, 48, 68, 0.24), rgba(0, 48, 68, 0.24));
+}
+
+.image-cards-section__card-content {
+  @apply max-1024:gap-20 max-640:p-30 relative z-10 flex w-full flex-1 flex-col items-center justify-between p-35;
+}
+
+.image-cards-section__card-text {
+  @apply flex w-full flex-1 flex-col justify-center gap-10;
+}
+
+/* .image-cards-section__card-text h3 {
+  @apply text-heading-3 max-1199:text-heading-4 max-1199:leading-30 max-768:text-20 max-768:leading-25 leading-40;
+} */
+
+.image-cards-section__card-text p {
+  @apply text-20 max-1199:text-18 max-1199:leading-22 leading-24;
+}
+
+.image-cards-section__card-btn {
+  @apply text-16 w-full leading-20;
+}
+
+.image-cards-section__scrollbar.swiper-scrollbar {
+  @apply rounded-10 max-768:mt-20 relative! inset-auto! mt-40 mb-4 h-3! w-full! opacity-100;
+}
+
+.image-cards-section__scrollbar .swiper-scrollbar-drag {
+  @apply rounded-10 bg-coral cursor-grab;
 }

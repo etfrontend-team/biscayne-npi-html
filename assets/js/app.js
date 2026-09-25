@@ -4,6 +4,7 @@ import { initSwipers } from './swiper.js'
 import { initSearchBar } from './search-bar.js'
 import initToursFilter from './tours-filter.js'
 import initBlogFilter from './blog-filter.js'
+import initExpandCards from './expand-cards.js'
 
 document.addEventListener('DOMContentLoaded', () => {
   initHeader()
@@ -12,4 +13,5 @@ document.addEventListener('DOMContentLoaded', () => {
   initSearchBar()
   initToursFilter()
   initBlogFilter()
+  initExpandCards()
 })

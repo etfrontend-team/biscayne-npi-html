@@ -175,4 +175,24 @@ export function initSwipers() {
   initPopularAdventures();
   initThreeCardWrapper();
   initFeaturedStory();
+  initImageCardsSlider();
+}
+
+export function initImageCardsSlider() {
+  const swiperEl = document.querySelector('.image-cards-section__slider');
+  if (!swiperEl) return;
+
+  new Swiper(swiperEl, {
+    slidesPerView: 1,
+    spaceBetween: 0,
+    watchOverflow: true,
+    scrollbar: {
+      el: swiperEl.parentElement.querySelector('.image-cards-section__scrollbar'),
+      draggable: true,
+    },
+    breakpoints: {
+      552: { slidesPerView: 2 },
+      1024: { slidesPerView: 3 },
+    },
+  });
 }

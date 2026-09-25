@@ -378,7 +378,7 @@
 }
 
 .adventure-card__badge {
-  @apply rounded-pill font-heading text-14 1199:text-16 text-primary-black inline-flex min-h-32 items-center px-12 py-6 leading-none font-normal whitespace-nowrap uppercase;
+  @apply rounded-pill font-heading text-14 1199:text-16 text-black inline-flex min-h-32 items-center px-12 py-6 leading-none font-normal whitespace-nowrap uppercase;
 }
 
 .adventure-card__badge--teal {
@@ -477,4 +477,8 @@
 
 .popular-adventures-section__slider .swiper-scrollbar {
   @apply left-0!;
+}
+
+.no-break {
+  @apply whitespace-nowrap;
 }

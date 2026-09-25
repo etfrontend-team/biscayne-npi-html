@@ -30,7 +30,7 @@
   --font-weight-book: 390;
 
   --color-white: #fdfdfd;
-  --color-black: #000000;
+  --color-black: #080808;
   --color-midnight: #003044;
   --color-coral: #ff715a;
   --color-aqua: #80d6cf;
@@ -44,7 +44,7 @@
   --color-green: #5fbd53;
   --color-pink: #e794b7;
   --color-limestone-dark: #d5d3ba;
-  --color-primary-black: #080808;
+  --color-cypress-green: #097053;
 
   --text-heading-1: 64px;
   --text-heading-2: 48px;
@@ -66,6 +66,8 @@
   --radius-30: 30px;
 
   --container-1000: 1000px;
+  --container-1212: 1212px;
+  --container-505: 505px;
 
   --rotate-16: 15.85deg;
   --rotate-19: 18.71deg;
