@@ -1,0 +1,56 @@
+.icon-links-section {
+  @apply relative overflow-hidden;
+}
+
+.icon-links-section__bg {
+  @apply pointer-events-none absolute inset-0 size-full object-cover;
+}
+
+.icon-links-section__overlay {
+  @apply pointer-events-none absolute inset-0 bg-black/60;
+}
+
+.icon-links-section__inner {
+  @apply max-768:gap-40 relative z-1 flex w-full flex-col items-center gap-50;
+}
+
+.icon-links-section__heading {
+  @apply max-768:pb-10 flex w-full flex-col gap-10 pb-30 text-center;
+}
+
+.icon-links-section__eyebrow p {
+  @apply font-heading text-heading-3 max-1440:text-heading-4 max-1440:leading-30 max-768:text-18 max-768:leading-22 text-coral leading-40 font-normal uppercase;
+}
+
+.icon-links-section__heading h2 {
+  @apply text-heading-1 max-1440:text-heading-2 max-1440:leading-60 max-1024:text-heading-3 max-1024:leading-40 max-768:text-heading-4 max-768:leading-30 leading-81;
+}
+
+.icon-links-section__subtitle {
+  @apply w-full text-center;
+}
+
+.icon-links-section__subtitle h3 {
+  @apply max-1440:text-heading-4 max-1440:leading-30 max-768:text-18 max-768:leading-22 leading-40 font-normal;
+}
+
+/* Figma has no tablet/mobile frame for this section: 4 cols → 2 cols (≤1024) → 1 col (≤576) is an assumption. */
+.icon-links-section__list {
+  @apply max-1024:grid-cols-2 max-1024:gap-y-40 max-576:grid-cols-1 m-0 grid w-full list-none grid-cols-4 gap-40 p-0;
+}
+
+.icon-links-section__item {
+  @apply flex flex-col items-center gap-25 text-center no-underline;
+}
+
+.icon-links-section__icon {
+  @apply bg-midnight border-white max-768:size-80 flex size-100 shrink-0 items-center justify-center rounded-full border-2 border-solid transition-transform duration-300 ease-out;
+}
+
+.icon-links-section__label {
+  @apply font-heading text-heading-4 max-1440:text-20 max-1440:leading-25 max-768:text-18 max-768:leading-22 w-full leading-30 font-normal text-white uppercase;
+}
+
+.icon-links-section__item:hover .icon-links-section__icon {
+  @apply scale-105;
+}

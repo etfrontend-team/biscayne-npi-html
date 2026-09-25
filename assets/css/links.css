@@ -1,0 +1,74 @@
+/* ===== QUICK LINKS SECTION (Links) ===== */
+
+.quick-links-section {
+  @apply relative overflow-hidden;
+}
+
+.quick-links-section__bg {
+  @apply pointer-events-none absolute inset-0 size-full object-cover;
+}
+
+.quick-links-section__overlay {
+  @apply pointer-events-none absolute inset-0 bg-black/60;
+}
+
+.quick-links-section__deco {
+  @apply max-1024:hidden pointer-events-none absolute flex h-118 items-center gap-6;
+}
+
+.quick-links-section__deco--top {
+  @apply -top-18 -left-186;
+}
+
+.quick-links-section__deco--bottom {
+  @apply -right-180 -bottom-21;
+}
+
+.quick-links-section__deco .tours-section__deco-icon-wrap--narrow {
+  @apply h-112 w-81 items-start;
+}
+
+.quick-links-section__deco .tours-section__deco-icon-wrap--narrow img {
+  @apply h-81 w-112 shrink-0 rotate-90 object-cover object-left;
+}
+
+.quick-links-section__inner {
+  @apply max-768:gap-40 relative z-1 flex flex-col items-center gap-50;
+}
+
+.quick-links-section__heading {
+  @apply max-768:pb-10 flex w-full flex-col gap-10 pb-30 text-center;
+}
+
+.quick-links-section__subtitle {
+  @apply font-heading text-heading-3 max-1024:text-heading-4 max-1024:leading-30 max-768:text-18 max-768:leading-23 text-coral leading-40 font-normal uppercase;
+}
+
+.quick-links-section__title {
+  @apply text-heading-1 max-1024:text-heading-2 max-1024:leading-60 max-768:text-heading-3 max-768:leading-40 leading-81 font-bold text-white uppercase;
+}
+
+.quick-links-section__list {
+  @apply max-768:gap-24 m-0 flex list-none flex-col items-center gap-40 p-0;
+}
+
+.quick-links-section__list .btn {
+  @apply max-576:text-16 max-576:leading-20;
+}
+
+.quick-links-section__icons {
+  @apply flex flex-wrap items-start justify-center gap-15;
+}
+
+.quick-links-section__icon {
+  @apply bg-midnight flex size-40 shrink-0 items-center justify-center overflow-hidden rounded-full transition-transform duration-300 hover:scale-110;
+}
+
+.quick-links-section__icon img {
+  @apply block shrink-0;
+}
+
+.quick-links-section__icon-instagram {
+  @apply bg-aqua block h-[23.333px] w-[23.335px] shrink-0;
+  mask: url('/assets/icons/icon-links-instagram-mask.svg') no-repeat center / 100% 100%;
+}

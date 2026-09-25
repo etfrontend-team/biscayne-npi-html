@@ -7,6 +7,9 @@
 @import './custom.css';
 @import './fnpa.css';
 @import './our-team.css';
+@import './404.css';
+@import './links.css';
+@import './social-media.css';
 
 @theme {
   --spacing: 1px;

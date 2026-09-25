@@ -1,0 +1,55 @@
+.error-section {
+  @apply max-1199:min-h-800 max-768:min-h-0 relative flex min-h-975 items-center justify-center overflow-hidden;
+}
+
+.error-section__bg {
+  @apply pointer-events-none absolute inset-0 size-full object-cover;
+}
+
+.error-section__overlay {
+  @apply pointer-events-none absolute inset-0 bg-black/70;
+}
+
+.error-section__inner {
+  @apply max-768:gap-40 relative z-1 mx-auto flex w-full flex-col items-center gap-55;
+}
+
+.error-section__copy {
+  @apply flex flex-col items-center gap-30;
+}
+
+.error-section__heading {
+  @apply flex flex-col gap-10 text-center;
+}
+
+.error-section__heading h2 {
+  @apply text-heading-2 max-1024:text-heading-3 max-1024:leading-40 max-768:text-heading-4 max-768:leading-30 leading-60;
+}
+
+.error-section__subtitle p {
+  @apply font-heading text-24 max-768:text-18 max-768:leading-22 text-coral leading-30 font-normal uppercase;
+}
+
+.error-section__image {
+  @apply aspect-668/350 w-full max-w-668 object-cover;
+}
+
+.error-section__deco {
+  @apply max-1024:hidden pointer-events-none absolute flex h-118 items-center gap-6;
+}
+
+.error-section__deco--top {
+  @apply -top-18 -left-186;
+}
+
+.error-section__deco--bottom {
+  @apply -bottom-19 left-1182;
+}
+
+.error-section__deco .tours-section__deco-icon-wrap--narrow {
+  @apply h-112 w-81 items-start;
+}
+
+.error-section__deco .tours-section__deco-icon-wrap--narrow img {
+  @apply h-81 w-112 shrink-0 rotate-90 object-cover object-left;
+}
