@@ -5,6 +5,7 @@ import { initSearchBar } from './search-bar.js'
 import initToursFilter from './tours-filter.js'
 import initBlogFilter from './blog-filter.js'
 import initExpandCards from './expand-cards.js'
+import initCheckoutConsent from './checkout-consent.js'
 
 document.addEventListener('DOMContentLoaded', () => {
   initHeader()
@@ -14,4 +15,5 @@ document.addEventListener('DOMContentLoaded', () => {
   initToursFilter()
   initBlogFilter()
   initExpandCards()
+  initCheckoutConsent()
 })

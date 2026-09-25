@@ -144,10 +144,35 @@ h6,
   @apply px-100 max-1199:px-60 max-768:px-30 1512:max-w-1700 1512:mx-auto min-[1700px]:px-0;
 }
 
+.container-fluid-xl {
+  @apply px-150 max-1366:px-100 max-1199:px-60 max-768:px-30 1512:max-w-1700 1512:mx-auto min-[1800px]:px-0;
+}
+
 .container-fluid-md {
   @apply px-150 max-1366:px-100 max-1199:px-60 max-768:px-30;
 }
 
 .container-fluid {
   @apply px-40 max-1440:px-24 max-1199:px-16 1512:max-w-1700 1512:mx-auto min-[1700px]:px-0;
+}
+
+/* Bullet lists: dot drawn in CSS, color from the modifier class */
+.list ul {
+  @apply flex flex-col gap-15;
+}
+
+.list ul li {
+  @apply text-24 max-1199:text-20 max-1199:leading-24 max-768:text-18 max-768:leading-22 font-body font-book relative pl-20 leading-29;
+}
+
+.list ul li::before {
+  @apply max-1199:top-8 max-768:top-7 absolute top-10 left-0 size-8 rounded-full content-[''];
+}
+
+.list.aqua ul li::before {
+  @apply bg-aqua;
+}
+
+.list.white ul li {
+  @apply text-white;
 }

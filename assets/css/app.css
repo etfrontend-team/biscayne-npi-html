@@ -6,6 +6,7 @@
 @import './utilities.css';
 @import './custom.css';
 @import './fnpa.css';
+@import './our-team.css';
 
 @theme {
   --spacing: 1px;

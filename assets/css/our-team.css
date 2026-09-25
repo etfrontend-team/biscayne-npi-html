@@ -1,0 +1,426 @@
+.team-grid-section__inner {
+  @apply max-1199:gap-40 mx-auto flex flex-col gap-50;
+}
+
+.team-grid-section__copy {
+  @apply max-768:gap-20 mx-auto flex w-full flex-col gap-32;
+}
+
+.team-grid-section__heading {
+  @apply text-center;
+}
+
+.team-grid-section__intro p {
+  @apply text-24 max-1199:text-20 max-1199:leading-24 max-768:text-16 max-768:leading-19 leading-29;
+}
+
+/* Figma separates the two paragraphs with one empty 29px line */
+.team-grid-section__intro p + p {
+  @apply max-1199:mt-24 max-768:mt-19 mt-29;
+}
+
+.team-grid-section__cards {
+  @apply max-1024:grid-cols-2 max-576:grid-cols-1 max-768:gap-20 grid grid-cols-3 gap-30;
+}
+
+.team-grid-section__card {
+  @apply rounded-10 relative flex min-h-280 items-end overflow-hidden p-20;
+}
+
+.team-grid-section__card-image {
+  @apply pointer-events-none absolute inset-0 size-full object-cover;
+}
+
+.team-grid-section__card-overlay {
+  @apply pointer-events-none absolute inset-0 bg-linear-to-b from-black/20 from-60% to-black/40 to-85%;
+}
+
+.team-grid-section__card-copy {
+  @apply relative flex flex-col gap-10;
+}
+
+.team-grid-section__card-copy h3 {
+  @apply text-20 max-768:text-18 max-768:leading-22 leading-25;
+}
+
+.team-grid-section__card-copy p {
+  @apply text-16 leading-19 font-normal;
+}
+
+.cta-banner-section__inner {
+  @apply max-1024:flex-col max-1024:items-start max-1024:gap-30 flex items-center gap-100;
+}
+
+.cta-banner-section__copy {
+  @apply max-768:gap-16 flex w-full flex-1 flex-col gap-32;
+}
+
+.cta-banner-section__copy p {
+  @apply text-24 max-1199:text-20 max-1199:leading-24 max-768:text-16 max-768:leading-19 leading-29;
+}
+
+.cta-banner-section__actions {
+  @apply max-1024:justify-start flex w-full flex-1 flex-wrap justify-end gap-16;
+}
+
+/* Figma strokes sit inside the 47px button, so trim 1px of padding to keep the height */
+.cta-banner-section__btn-outline {
+  @apply border-aqua border border-solid py-11;
+}
+
+.job-cards-section__inner {
+  @apply max-1199:gap-40 flex flex-col gap-50;
+}
+
+.job-cards-section__title {
+  @apply mx-auto w-full text-center;
+}
+
+.job-cards-section__cards {
+  @apply max-1199:grid-cols-2 max-768:gap-20 max-576:grid-cols-1 grid grid-cols-3 gap-x-30 gap-y-40;
+}
+
+.job-cards-section__card {
+  @apply rounded-10 max-768:min-h-420 relative flex min-h-500 items-end justify-center overflow-hidden px-20 py-30;
+}
+
+.job-cards-section__card-image {
+  @apply pointer-events-none absolute inset-0 size-full object-cover;
+}
+
+.job-cards-section__card-overlay {
+  @apply pointer-events-none absolute inset-0 bg-linear-to-b from-black/30 from-60% to-black/60 to-85%;
+}
+
+.job-cards-section__card-content {
+  @apply max-768:gap-30 relative flex w-full flex-col items-center gap-40;
+}
+
+.job-cards-section__card-info {
+  @apply flex w-full flex-col items-center gap-12;
+}
+
+.job-cards-section__card-info h3 {
+  @apply text-24 max-768:text-20 max-768:leading-25 leading-30 text-center;
+}
+
+.job-cards-section__tag {
+  @apply rounded-icon bg-limestone-light px-10 py-6;
+}
+
+.job-cards-section__tag p {
+  @apply text-16 leading-19 text-center;
+}
+
+.job-detail-section {
+  @apply relative overflow-hidden;
+}
+
+.job-detail-section__inner {
+  @apply max-1199:gap-40 relative z-1 flex flex-col gap-50;
+}
+
+.job-detail-section__intro {
+  @apply max-768:gap-30 mx-auto flex w-full flex-col gap-50;
+}
+
+.job-detail-section__title {
+  @apply text-center;
+}
+
+.job-detail-section__highlights {
+  @apply max-768:gap-24 flex flex-col gap-40;
+}
+
+.job-detail-section__columns {
+  @apply max-768:flex-col max-768:gap-20 flex gap-32;
+}
+
+.job-detail-section__column {
+  @apply flex flex-1 flex-col gap-20;
+}
+
+.job-detail-section__row {
+  @apply flex gap-14;
+}
+
+.job-detail-section__row p {
+  @apply text-24 max-1199:text-20 max-1199:leading-24 max-768:text-18 max-768:leading-22 leading-29;
+}
+
+.job-detail-section__label {
+  @apply shrink-0;
+}
+
+.job-detail-section__label p {
+  @apply font-medium whitespace-nowrap;
+}
+
+.job-detail-section__media {
+  @apply max-1199:flex-col max-1199:gap-40 flex gap-55;
+}
+
+.job-detail-section__image {
+  @apply rounded-10 max-1199:aspect-video relative w-full flex-1 self-stretch overflow-hidden;
+}
+
+/* Absolute so the photo fills the row height set by the copy column instead of driving it */
+.job-detail-section__image img {
+  @apply absolute inset-0 size-full object-cover;
+}
+
+.job-detail-section__copy {
+  @apply max-1199:py-0 max-768:gap-24 flex flex-1 flex-col gap-40 py-20;
+}
+
+.job-detail-section__copy .content p {
+  @apply text-24 max-1199:text-20 max-1199:leading-24 max-768:text-16 max-768:leading-19 leading-29;
+}
+
+/* Figma separates the two paragraphs with one empty 29px line */
+.job-detail-section__copy .content p + p {
+  @apply max-1199:mt-24 max-768:mt-19 mt-29;
+}
+
+.job-detail-section__deco {
+  @apply max-1024:hidden pointer-events-none absolute flex h-118 items-center gap-6;
+}
+
+.job-detail-section__deco--top {
+  @apply -top-18 -left-186;
+}
+
+.job-detail-section__deco--bottom {
+  @apply -right-178 -bottom-23;
+}
+
+.job-detail-section__deco .tours-section__deco-icon-wrap--narrow {
+  @apply h-112 w-86 items-start;
+}
+
+.job-detail-section__deco .tours-section__deco-icon-wrap--narrow img {
+  @apply h-81 w-112 shrink-0 rotate-90 object-cover object-left;
+}
+.job-detail-section__deco--top .tours-section__deco-icon-wrap--narrow {
+  @apply items-center;
+}
+.job-detail-section__deco--top .tours-section__deco-icon-wrap--narrow img {
+  @apply object-right;
+}
+.list-content-section__inner {
+  @apply max-768:gap-24 mx-auto flex w-full flex-col gap-40;
+}
+
+.form-media-section__inner {
+  @apply max-1199:flex-col max-1199:gap-40 mx-auto flex items-start gap-80;
+}
+
+.form-media-section__texts {
+  @apply max-768:gap-24 flex w-full max-w-632 flex-col gap-40 max-1199:max-w-full;
+}
+
+.form-media-section__texts .content p {
+  @apply text-24 max-1199:text-20 max-1199:leading-24 max-768:text-16 max-768:leading-19 leading-29;
+}
+
+/* Form markup is added later; the image keeps Figma's 500x823 frame until then */
+.form-media-section__image {
+  @apply rounded-10 aspect-500/823 max-1199:aspect-video relative w-full max-w-500 shrink-0 self-stretch overflow-hidden max-1199:max-w-full;
+}
+
+.form-media-section__image img {
+  @apply absolute inset-0 size-full object-cover;
+}
+
+.donate-section {
+  @apply relative overflow-hidden;
+}
+
+.donate-section__bg {
+  @apply pointer-events-none absolute inset-0 size-full object-cover;
+}
+
+.donate-section__overlay {
+  @apply pointer-events-none absolute inset-0 bg-black/50;
+}
+
+.donate-section__inner {
+  @apply max-1199:flex-col max-1199:items-stretch max-1199:gap-40 relative flex items-center gap-100;
+}
+
+.donate-section__texts {
+  @apply max-1199:py-0 max-768:gap-30 flex w-full flex-1 flex-col gap-40 py-20;
+}
+
+.donate-section__form {
+  @apply flex flex-col gap-15;
+}
+
+.donate-section__form label,
+.donate-section__hint p {
+  @apply font-body font-book text-20 max-768:text-16 max-768:leading-19 leading-24 text-white;
+}
+
+.donate-section__field {
+  @apply max-576:flex-col max-576:items-stretch flex items-stretch gap-20;
+}
+
+.donate-section__input {
+  @apply font-body font-book text-20 max-768:text-16 rounded-pill w-full min-w-0 flex-1 border-2 border-solid border-white bg-white/20 px-24 py-9 leading-24 text-white placeholder-white;
+}
+
+.donate-section__copy p {
+  @apply text-24 max-1199:text-20 max-1199:leading-24 max-768:text-16 max-768:leading-19 leading-29;
+}
+
+.donate-section__image {
+  @apply rounded-10 max-1199:aspect-video max-1199:h-auto relative h-660 w-full flex-1 overflow-hidden;
+}
+
+.donate-section__image img {
+  @apply absolute inset-0 size-full object-cover;
+}
+
+.join-team-section__inner {
+  @apply max-w-1212 max-1199:flex-col max-1199:items-stretch max-1199:gap-40 mx-auto flex items-stretch gap-80;
+}
+
+.join-team-section__texts {
+  @apply max-768:gap-30 flex w-full min-w-0 flex-1 flex-col gap-40;
+}
+
+.join-team-section__copy p {
+  @apply text-24 max-1199:text-20 max-1199:leading-24 max-768:text-16 max-768:leading-19 leading-29;
+}
+
+.join-team-section__form {
+  @apply w-full;
+}
+
+/* Figma image is 500x823 and stretches with the form column */
+.join-team-section__image {
+  @apply rounded-10 max-1199:aspect-video max-1199:min-h-0 max-1199:w-full relative min-h-823 w-500 shrink-0 overflow-hidden;
+}
+
+.join-team-section__image img {
+  @apply absolute inset-0 size-full object-cover object-[45%_50%];
+}
+
+.impact-cards-section__inner {
+  @apply max-1199:gap-40 flex flex-col gap-50;
+}
+
+.impact-cards-section__heading {
+  @apply mx-auto w-full text-center;
+}
+
+.impact-cards-section__cards {
+  @apply max-1199:grid-cols-2 max-768:grid-cols-1 max-768:gap-20 grid grid-cols-3 gap-40;
+}
+
+.impact-cards-section__column {
+  @apply flex flex-col gap-20;
+}
+
+/* Middle column shows the copy first in Figma; on stacked layouts every column starts with its image */
+.impact-cards-section__column--reverse {
+  @apply max-1199:flex-col-reverse;
+}
+
+.impact-cards-section__image {
+  @apply rounded-10 h-300 w-full object-cover max-768:h-auto max-768:aspect-822/600;
+}
+
+.impact-cards-section__box {
+  @apply rounded-10 bg-limestone-light max-768:p-20 flex flex-col gap-20 p-30;
+}
+
+.impact-cards-section__stat p {
+  @apply font-heading text-heading-2 max-1440:text-heading-3 max-1440:leading-40 max-768:text-heading-4 max-768:leading-30 text-coral leading-60 font-bold uppercase;
+}
+
+.impact-cards-section__box .content-midnight p {
+  @apply text-24 max-1199:text-20 max-1199:leading-24 max-768:text-18 max-768:leading-22 leading-29;
+}
+
+.fund-list-section {
+  @apply relative overflow-hidden;
+}
+
+.fund-list-section__inner {
+  @apply max-1199:flex-col max-1199:items-stretch max-1199:gap-40 relative z-1 mx-auto flex items-center gap-100;
+}
+
+.fund-list-section__image {
+  @apply rounded-10 max-1199:aspect-video max-1199:max-w-full relative aspect-500/550 w-full max-w-500 shrink-0 overflow-hidden;
+}
+
+.fund-list-section__image img {
+  @apply absolute inset-0 size-full object-cover;
+}
+
+.fund-list-section__texts {
+  @apply max-1199:py-0 max-768:gap-30 flex w-full flex-1 flex-col gap-40 py-20;
+}
+
+.fund-list-section__list {
+  @apply flex flex-col;
+}
+
+.fund-list-section__item {
+  @apply max-768:py-8 flex items-center gap-12 py-16 pr-20;
+}
+
+.fund-list-section__item img {
+  @apply shrink-0;
+}
+
+.fund-list-section__item .content p {
+  @apply text-24 max-1199:text-20 max-1199:leading-24 max-768:text-18 max-768:leading-22 leading-29;
+}
+
+.fund-list-section__checkout {
+  @apply flex flex-col gap-15;
+}
+
+.fund-list-section__secure {
+  @apply flex cursor-pointer items-center gap-10 self-start;
+}
+
+.fund-list-section__secure-text {
+  @apply font-body font-book text-20 max-768:text-16 max-768:leading-19 text-midnight leading-24;
+}
+
+/* Native checkbox stays for keyboard + screen readers; the span draws the Square-logo style box */
+.fund-list-section__checkbox-input {
+  @apply sr-only;
+}
+
+.fund-list-section__checkbox {
+  @apply rounded-4 border-midnight relative flex size-20 shrink-0 items-center justify-center border-4 border-solid;
+}
+
+.fund-list-section__checkbox::after {
+  @apply bg-midnight size-6 opacity-0 transition-opacity duration-200 content-[''];
+}
+
+.fund-list-section__checkbox-input:checked + .fund-list-section__checkbox::after {
+  @apply opacity-100;
+}
+
+.fund-list-section__checkbox-input:focus-visible + .fund-list-section__checkbox {
+  @apply outline-1 outline-offset-2 outline-dotted;
+}
+
+/* Keep the aqua look while the button waits for the Square checkbox */
+.fund-list-section__btn:disabled {
+  @apply hover:bg-aqua hover:text-midnight;
+}
+
+.fund-list-section__deco {
+  @apply max-1024:hidden pointer-events-none absolute -right-724 -bottom-60 max-w-none -scale-x-100;
+}
+
+.fund-list-section__btn {
+  @apply w-full;
+}
