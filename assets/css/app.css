@@ -5,6 +5,7 @@
 @import './layout.css';
 @import './utilities.css';
 @import './custom.css';
+@import './fnpa.css';
 
 @theme {
   --spacing: 1px;

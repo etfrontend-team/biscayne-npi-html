@@ -1,0 +1,218 @@
+.zigzag-section {
+  @apply relative overflow-hidden;
+}
+
+.zigzag-section__inner {
+  @apply max-1199:gap-40 mx-auto flex flex-col gap-50;
+}
+
+/* Shared title + coral subheader block used by every FNPA section */
+.section-heading {
+  @apply flex flex-col gap-10;
+}
+
+.section-heading h3 {
+  @apply max-1024:text-20 max-1024:leading-25 max-768:text-16 max-768:leading-20 font-normal;
+}
+
+.zigzag-section__row {
+  @apply max-1199:flex-col max-1199:gap-40 flex items-center gap-80;
+}
+
+.zigzag-section__image {
+  @apply rounded-10 max-1199:max-w-full max-1199:aspect-video max-1199:self-auto max-768:order-last relative w-full max-w-451 shrink-0 self-stretch overflow-hidden;
+}
+
+/* Absolute so the photo fills the row height set by the copy column instead of driving it */
+.zigzag-section__image img {
+  @apply absolute inset-0 size-full object-cover;
+}
+
+.zigzag-section__content {
+  @apply max-768:gap-30 flex w-full flex-1 flex-col items-center gap-40;
+}
+
+.zigzag-section__logo {
+  @apply max-768:max-w-240 h-auto w-full max-w-320;
+}
+
+.zigzag-section__text p {
+  @apply text-24 max-1199:text-20 max-1199:leading-24 max-768:text-16 max-768:leading-19 leading-29;
+}
+
+.zigzag-section__cards {
+  @apply max-576:grid-cols-1 grid w-full grid-cols-2 gap-x-24 gap-y-20;
+}
+
+.zigzag-section__card {
+  @apply rounded-10 flex flex-col gap-15 px-20 py-16;
+}
+
+.zigzag-section__card-copy {
+  @apply flex flex-col gap-10;
+}
+
+.zigzag-section__card-copy h4 {
+  @apply text-20 max-768:text-18 max-768:leading-22 leading-24 font-normal;
+}
+
+.zigzag-section__card-copy .content p {
+  @apply text-16 leading-19;
+}
+
+.zigzag-section__statement {
+  @apply rounded-10 bg-limestone w-full px-20 py-15 text-center;
+}
+
+.zigzag-section__deco {
+  @apply max-1024:hidden pointer-events-none absolute -right-195 -bottom-66 flex h-118 items-center gap-6;
+}
+
+.zigzag-section__deco .tours-section__deco-icon-wrap--narrow {
+  @apply h-112 w-81 items-start
+}
+.zigzag-section__deco .tours-section__deco-icon-wrap--narrow img {
+  @apply shrink-0 rotate-90 object-cover w-112 h-81 object-left;
+}
+
+.content-media-section {
+  @apply relative overflow-hidden;
+}
+
+.content-media-section__inner {
+  @apply max-1199:flex-col max-1199:items-stretch max-1199:gap-60 mx-auto flex items-center gap-100;
+}
+
+.content-media-section__texts {
+  @apply max-1199:py-0 flex flex-1 flex-col items-start gap-40 py-20;
+}
+
+.content-media-section__list {
+  @apply flex flex-col;
+}
+
+.content-media-section__item {
+  @apply max-768:py-8 flex items-center gap-12 py-16 pr-20;
+}
+
+.content-media-section__item img {
+  @apply shrink-0;
+}
+
+.content-media-section__item .content p {
+  @apply text-24 max-1199:text-20 max-1199:leading-24 max-768:text-18 max-768:leading-22 leading-29;
+}
+
+.content-media-section__btn {
+  @apply max-576:leading-15 leading-25;
+}
+
+.content-media-section__media {
+  @apply max-1199:max-w-full max-1199:aspect-100/93 max-1199:self-auto relative w-full max-w-500 shrink-0 self-stretch;
+}
+
+/* Absolute so the photo fills the row height set by the text column instead of driving it */
+.content-media-section__image {
+  @apply rounded-10 absolute inset-0 size-full object-cover;
+}
+
+/* Turtle overlaps the photo's left edge and hangs below it, as in Figma */
+.content-media-section__overlay {
+  @apply max-1199:-left-40 max-768:-left-15 max-768:max-w-200 pointer-events-none absolute -bottom-47 -left-82 h-auto w-full max-w-360;
+}
+
+.section-heading__preheader p {
+  @apply font-heading text-heading-3 max-1024:text-20 max-1024:leading-25 max-768:text-16 max-768:leading-20 text-coral leading-40 font-normal uppercase;
+}
+
+.image-cards-grid-section {
+  @apply relative overflow-hidden;
+}
+
+.image-cards-grid-section__inner {
+  @apply max-1199:gap-40 relative z-1 flex flex-col gap-50;
+}
+
+.image-cards-grid-section__header {
+  @apply max-1024:flex-col max-1024:items-start max-1024:gap-20 flex items-center gap-100;
+}
+
+.image-cards-grid-section__header > * {
+  @apply w-full flex-1;
+}
+
+.image-cards-grid-section__intro p {
+  @apply text-24 max-1199:text-20 max-1199:leading-24 max-768:text-16 max-768:leading-19 leading-29;
+}
+
+.image-cards-grid-section__cards {
+  @apply max-1199:grid-cols-2 max-576:grid-cols-1 grid grid-cols-4 gap-20;
+}
+
+.image-cards-grid-section__card {
+  @apply rounded-10 max-768:min-h-380 relative flex min-h-420 flex-col overflow-hidden px-20 py-30;
+}
+
+.image-cards-grid-section__card-image {
+  @apply pointer-events-none absolute inset-0 size-full object-cover;
+}
+
+.image-cards-grid-section__card-overlay {
+  @apply bg-image-cards-overlay pointer-events-none absolute inset-0;
+}
+
+.image-cards-grid-section__card-content {
+  @apply max-768:pt-60 relative flex flex-1 flex-col justify-between gap-20 pt-100;
+}
+
+.image-cards-grid-section__card-text {
+  @apply flex flex-col gap-10;
+}
+
+.image-cards-grid-section__card-text h3 {
+  @apply max-1440:text-heading-3 max-1440:leading-40 max-768:text-24 max-768:leading-30 text-center;
+}
+
+.image-cards-grid-section__card-text p {
+  @apply text-20 max-768:text-18 max-768:leading-22 leading-24;
+}
+
+.image-cards-grid-section__card-btn {
+  @apply w-full;
+}
+
+.image-cards-grid-section__deco {
+  @apply max-1024:hidden pointer-events-none absolute;
+}
+
+.image-cards-grid-section__deco--bottom-left {
+  @apply bottom-0 left-0;
+}
+
+.image-cards-grid-section__deco--top-right {
+  @apply -top-17 -right-1;
+}
+
+.resource-cards-section__inner {
+  @apply max-1199:gap-40 mx-auto flex flex-col gap-50;
+}
+
+.resource-cards-section__title {
+  @apply text-center;
+}
+
+.resource-cards-section__cards {
+  @apply max-768:grid-cols-1 max-768:gap-20 grid grid-cols-2 gap-30;
+}
+
+.resource-cards-section__card {
+  @apply rounded-10 bg-white max-768:p-20 flex flex-col items-start gap-15 p-30;
+}
+
+.resource-cards-section__card-copy {
+  @apply flex flex-col gap-10;
+}
+
+.resource-cards-section__card-copy p {
+  @apply text-24 max-1199:text-20 max-1199:leading-24 max-768:text-18 max-768:leading-22 leading-29;
+}
